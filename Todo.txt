@@ -1,6 +1,17 @@
+우분투 설치 후, 해야 할 것들
 https://luckyyowu.tistory.com/409
 
 
 파이썬 기반 마이크로 웹 개발 프레임워크
 https://essim92.tistory.com/8
+
+
+Seaborn
+https://retro-blue.tistory.com/14
+https://dining-developer.tistory.com/30
+
+
+Numpy 배열 인덱싱
+https://island-developer.tistory.com/69?category=799449
+
 
