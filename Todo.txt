@@ -9,6 +9,7 @@ https://essim92.tistory.com/8
 Seaborn
 https://retro-blue.tistory.com/14
 https://dining-developer.tistory.com/30
+https://blog.naver.com/ji0eeeee/221643691727
 
 
 Numpy 배열 인덱싱
