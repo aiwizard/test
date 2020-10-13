@@ -14,5 +14,5 @@ https://blog.naver.com/ji0eeeee/221643691727
 
 Numpy 배열 인덱싱
 https://island-developer.tistory.com/69?category=799449
-
+https://0ver-grow.tistory.com/709
 
