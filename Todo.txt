@@ -1,18 +1,26 @@
-우분투 설치 후, 해야 할 것들
+# 우분투 설치 후, 해야 할 것들
 https://luckyyowu.tistory.com/409
 
 
-파이썬 기반 마이크로 웹 개발 프레임워크
+# 파이썬 기반 마이크로 웹 개발 프레임워크
 https://essim92.tistory.com/8
 
 
-Seaborn
+# Seaborn
 https://retro-blue.tistory.com/14
 https://dining-developer.tistory.com/30
 https://blog.naver.com/ji0eeeee/221643691727
 
 
-Numpy 배열 인덱싱
+# Numpy 배열 인덱싱
 https://island-developer.tistory.com/69?category=799449
+
+# np.arange.reshape
 https://0ver-grow.tistory.com/709
+
+# Numpy Broadcasting
+https://0ver-grow.tistory.com/711?category=931716
+
+# Numpy, array, 함수, 행렬
+https://0ver-grow.tistory.com/710?category=931716
 
