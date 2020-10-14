@@ -1,0 +1,88 @@
+#
+# https://blog.naver.com/PostView.nhn?blogId=kiddwannabe&logNo=221790727905
+# https://blog.naver.com/kimkevin512/222023820406
+#
+# pip install pytube3 <<<<<============
+# 
+
+from pytube import YouTube
+
+# 영상 유튜브 접속하기
+video_url = 'https://www.youtube.com/watch?v=Zg3j6anDU6U'
+yt = YouTube(video_url)
+
+# 영상 기본 정보 가져오기
+print("[영상 제목]", yt.title)
+print("[영상 게시자]", yt.author)
+print("[조회수]", yt.views)
+print("[평균평점]", yt.rating)
+print("[영상길이(초)]", yt.length)
+print("[연령제한여부]", yt.age_restricted)
+print("[영상 설명]", yt.description)
+print("[썸네일URL]", yt.thumbnail_url)
+
+'''
+참고) pytube 에서는 유튜브 영상의 댓글이나, 좋아요/싫어요 수에 대한 정보를 
+가져오는 기능은 구현되어있지 않습니다. 별도로 크롤링을 코드 작성이 필요합니다. 
+'''
+# 전송 포맷 리스트 전체
+yt.streams
+
+# 위 중 선택
+stream = yt.streams[0]
+
+# 내가 원하는 영상만 선택하기
+yt.streams.filter(only_audio = True)		# 음성만 선택시
+yt.streams.filter(file_extension = 'mp4')	# mp4 only
+yt.streams.filter(file_extension = 'webm')	# webm only
+
+# 위 중 선택
+stream = yt.streams.filter(file_extension = 'mp4')[0]
+
+
+# 영상 다운로드
+stream.download()
+stream.download(output_path='./', filename = 'KOBE', filename_prefix= 'R.I.P_')
+
+
+
+
+
+
+# 캡션
+yt.captions.all()
+yt.captions.all()[0] # 0번 선택
+
+# 언어로 자막 선택하기
+## 한글 자막 1순위로 선택하기. 만약 한글 자막이 없다면 자막 리스트 중 첫 번째 자막 선택하기
+caption = yt.captions['ko']
+if caption == None:
+    if len(caption) == 1:
+        caption = yt.captions
+    elif len(caption) > 1:
+        caption = yt.captions[0]
+
+# 자막 살펴보기
+	print(caption.xml_captions())	# xml 포맷
+	print(caption.generate_srt_captions())	# srt 포맷
+
+
+# 자막 다운받기: download("파일명")
+caption.download( yt.title )
+
+
+
+
+
+
+
+
+
+# mp4 to mp3
+import os
+from moviepy.editor import *
+
+video = VideoFileClip(os.path.join('C:/Users/kevin.mp4'))
+video.audio.write_audiofile(os.path.join("C:/Users/kevin.mp3"))
+
+
