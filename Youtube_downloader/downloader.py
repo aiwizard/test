@@ -34,13 +34,14 @@ label1.grid(row=1, column=0)
 label2 = Label(root, text="Path to save: ", width=12, height=2, anchor=E)
 label2.grid(row=3, column=0)
 
-label3 = Label(root, text="File name: ", width=12, height=2, anchor=E)
+label3 = Label(root, text="Title: ", width=12, height=2, anchor=E)
 label3.grid(row=4, column=0)
+
 
 # 엔트리 - single line
 e1 = Entry(root, width=111, bg='light blue')
 e1.grid(row=1, column=1)
-e1.insert(0, 'https://www.youtube.com/watch?v=zJCdkOpU90g')
+e1.insert(0, 'https://www.youtube.com/watch?v=OxgiiyLp5pk')
 
 e2 = Entry(root)
 e2.grid(row=3, column=1, sticky='ew')
@@ -48,7 +49,7 @@ e2.insert(0, "./")
 
 e3 = Entry(root, bg='light yellow')
 e3.grid(row=4, column=1, sticky='ew')
-e3.insert(0, "filename")
+e3.insert(0, "You will see the youtube title here.")
 
 # Listbox
 listbox = Listbox(root, exportselection=False, selectmode="single", height=10)
@@ -97,7 +98,7 @@ def btncmd_lookup_format():
     e3.insert(0, yt.title)
 
     # Subtitles    
-    caption_count = len(yt.captions.all())
+    caption_count = len(yt.captions)
     if(caption_count > 0):
         print("subtitle is downloadable")
         #chkBtnSubtitle['state'] = NORMAL
@@ -106,7 +107,7 @@ def btncmd_lookup_format():
         print("There is no subtitles")
         #chkBtnSubtitle['state'] = DISABLED
 
-    for j in yt.captions.all():
+    for j in yt.captions:
         print(j)
 
 
@@ -118,16 +119,17 @@ def btncmd_save_as():
 
 
 def btncmd_download():
-    filename = e3.get()
-    if len(filename) ==  0:
-        filename = yt.title
+    #filename = e3.get()
+    #if len(filename) ==  0:
+    #    filename = yt.title
 
     cursel = listbox.curselection()
     print(' cursel: {}\n cursel[0]: {}'.format(cursel, cursel[0]))
     id = cursel[0]
     #yt.streams[id].download(output_path=gfilepath, filename = filename, filename_prefix= 'R.I.P_')
-    yt.streams[id].download(output_path=gfilepath, filename = filename, filename_prefix= '')
+    yt.streams[id].download(output_path=gfilepath)
 
+    # progress
     for i in range(101):    # 0 ~ 100
         time.sleep(0.01)    # 0.01초 대기
 
@@ -155,6 +157,9 @@ def btncmd_download():
             os.path.join(gfilepath, video_filename),
             os.path.join(gfilepath, audio_filename)
         ])
+        
+        # remove video
+        #os.remove(os.path.join(gfilepath, video_filename))
 
         msgbox.showinfo("알림", "다운로드 및 mp3 변환 완료")
 
@@ -173,8 +178,11 @@ def okcancel():
 #    msgbox.showinfo("이미지버튼", "이미지도 되네")
 '''
 
+
 def e1_clickLeft(event):
-  e1.delete(0, END)
+  #e1.delete(0, END)
+  #e1.select_range(0, 10)
+  print('Selection is not implemented yet')
 '''
 def e2_clickLeft(event):
   e2.delete(0, END)
@@ -225,10 +233,11 @@ def mp3_check():
 command=subtitle_check, 
 command=mp3_check, 
 '''
-subtitle = IntVar()  # StringVar() : 문자열, DoubleVar() : 실수형
+
 mp3 = IntVar()
-chkBtnSubtitle = Checkbutton(root, text="자막", state=DISABLED, variable=subtitle, anchor=W).grid(row=7, column=2, sticky='ew')
-Checkbutton(root, text="mp3", state=NORMAL, variable=mp3, anchor=W).grid(row=8, column=2, sticky='ew')
+subtitle = IntVar()  # StringVar() : 문자열, DoubleVar() : 실수형
+Checkbutton(root, text="mp3", state=NORMAL, variable=mp3, anchor=W).grid(row=7, column=2, sticky='ew')
+chkBtnSubtitle = Checkbutton(root, text="자막", state=DISABLED, variable=subtitle, anchor=W).grid(row=8, column=2, sticky='ew')
 
 ###############################################################
 root.mainloop()
