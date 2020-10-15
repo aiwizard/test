@@ -1,43 +1,68 @@
-위젯
-	https://blog.naver.com/shining0721/221958907424
 
-
-위젯 state
-	https://www.delftstack.com/howto/python-tkinter/how-to-change-tkinter-button-state/
-
+------------------------------------------------------------------------------------------------
+1. To do
+	필요한 압축 코덱이 무엇인지 확인 및 설치
+		https://www.unixmen.com/how-to-download-youtube-videos-pytube/
+			<Video: MPEG-4 Visual (.3gp) - 144p - Simple>
+			<Video: MPEG-4 Visual (.3gp) - 240p - Simple>
+			<Video: H.264 (.mp4) - 360p - Baseline>
+			<Video: H.264 (.mp4) - 720p - High>
+			<Video: VP8 (.webm) - 360p - N/A>
 		
-전반 참고
-	https://www.programcreek.com/python/example/12383/Tkinter.DISABLED
-	https://docs.python.org/ko/3.9/contents.html
+			# 이렇게도 가능해???
+			yt = YouTube(video_link)
+			video = yt.get('mp4', '720p')
+
+	Pytube 다운로드 진행상황
+		https://blog.naver.com/skyshin0304/221628569676
+
+	쓰레드
 	
+	다운로드 대상의 size 알 수 있나?
 	
-람다, 위젯 state
-	https://jakestistory.tistory.com/197
+	정규식
+		https://digiconfactory.tistory.com/243
 	
-	
-지뢰찾기 소스
-	https://jaraworkshop.tistory.com/4
-	
-	
--------------------------------------------------------------------------- usage
-실행파일 만들기
-	pyinstaller [--onefile] downloader.py
+------------------------------------------------------------------------------------------------
+2. Usage
+	실행파일 만들기	pyinstaller [--onefile] downloader.py
 
 
------------------------------------------------------------------------------------------------- 에러 수정
-1. KeyError 에러
-	parse_qs(formats[i]["cipher"]) for i, data in enumerate(formats)
-	KeyError: 'cipher'
-
-	==> 
-		pip show pytube3 로 lib 위치를 찾아서 extract.py 의 내용을 아래와 같이 수정하면 됨
+------------------------------------------------------------------------------------------------
+3. 에러 수정
+	1. KeyError 에러
 		parse_qs(formats[i]["cipher"]) for i, data in enumerate(formats)
-		==>
-		parse_qs(formats[i]["signatureCipher"]) for i, data in enumerate(formats)
+		KeyError: 'cipher'
 
-	참고: https://stackoverflow.com/questions/62098925/why-my-youtube-video-downloader-only-downloads-some-videos-and-for-other-videos
+		==> 
+			pip show pytube3 로 lib 위치를 찾아서 extract.py 의 내용을 아래와 같이 수정하면 됨
+			parse_qs(formats[i]["cipher"]) for i, data in enumerate(formats)
+			==>
+			parse_qs(formats[i]["signatureCipher"]) for i, data in enumerate(formats)
+
+		참고: https://stackoverflow.com/questions/62098925/why-my-youtube-video-downloader-only-downloads-some-videos-and-for-other-videos
 
 
-2. 에러
-	https://www.youtube.com/watch?v=gRpa42TsT9g
+	2. 에러
+		https://www.youtube.com/watch?v=gRpa42TsT9g
+
+
+
+------------------------------------------------------------------------------------------------
+Kb
+	위젯
+		https://blog.naver.com/shining0721/221958907424
+
+	위젯 state
+		https://www.delftstack.com/howto/python-tkinter/how-to-change-tkinter-button-state/
+
+	전반 참고
+		https://www.programcreek.com/python/example/12383/Tkinter.DISABLED
+		https://docs.python.org/ko/3.9/contents.html
 	
+	람다, 위젯 state
+		https://jakestistory.tistory.com/197
+	
+	지뢰찾기 소스
+		https://jaraworkshop.tistory.com/4
+
