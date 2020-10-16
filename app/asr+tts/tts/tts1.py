@@ -2,11 +2,11 @@ from tkinter import *
 
 root = Tk()
 root.title("Scyan TTS")
-root.iconbitmap("./speaker.ico") 
+#root.iconbitmap("./speaker.ico") 
 root.geometry("400x400")
 
 
-
+# menu
 menubar = Menu(root)
 
 menu_1 = Menu(menubar, tearoff=0)
@@ -25,6 +25,7 @@ menubar.add_cascade(label="도움말", menu=helpmenu)
 root.config(menu=menubar)
 
 
+# widget
 w = Label(root, text="TXT 파일 읽기")
 w.grid(row=0, column=0)
 e1 = Entry(root)
@@ -43,10 +44,11 @@ e2.grid(row=1, column=1)
 w = Button(root, text="구문 저장")
 w.grid(row=1, column=2)
 w = Button(root, text="구문 읽기")
-w.grid(row=1, column=3, columnspan=2)
+w.grid(row=1, column=3, columnspan=2, sticky='e')
 
+# frame with Text
 frame = Frame(root)
-frame.grid(row=2, column=0, columnspan=4, sticky='W')  
+frame.grid(row=2, column=0, columnspan=4, sticky='ew')  
 tb = Text(frame, width=50)
 tb.pack(side='left', fill='both', expand=True)
 scrollbar = Scrollbar(frame)
@@ -55,6 +57,7 @@ scrollbar.config(command= tb.yview)
 scrollbar.focus_set()
 
 scrollbar.pack(side='right', fill='y')
+
 
 
 mainloop()

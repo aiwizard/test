@@ -35,7 +35,7 @@ def create():
 
 root = Tk()
 root.title("Scyan TTS")
-root.wm_iconbitmap("speaker.ico") 
+#root.wm_iconbitmap("speaker.ico") 
 root.geometry("400x400")
 
 
