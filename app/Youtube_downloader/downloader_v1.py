@@ -182,22 +182,9 @@ def btncmd_download():
     #yt.streams[id].download(output_path=gfilepath, filename = filename, filename_prefix= 'R.I.P_')
     yt.streams[id].download(output_path=gfilepath)
 
-    '''
-    # progress
-    for i in range(101):    # 0 ~ 100
-        time.sleep(0.01)    # 0.01초 대기
-
-        p_var2.set(i)       # progress bar 의 값 설정
-        progressbar.update()   # GUI 업데이트
-
-        s = '{}%'.format(int(p_var2.get()))
-        e4.delete(0, END)
-        e4.insert(0, s)
-        '''
 
     e4.delete(0, END)
-    e4.insert(0, "비디오 다운로드 완료. 'mp3 변환 중...'")
-    e4.update()
+
 
     '''
     if( subtitle.get() != 0 ):
@@ -205,9 +192,13 @@ def btncmd_download():
     '''
 
     if( mp3.get() == 0 ):
+        e4.insert(0, "비디오 다운로드 완료.")
+        e4.update()
         msgbox.showinfo("알림", "다운로드 완료")
     else:
         print('mp3 conversion start')
+        e4.insert(0, "비디오 다운로드 완료. 'mp3 변환 중...'")
+        e4.update()
 
         video_filename = yt.streams[id].default_filename
         nameonly = video_filename[:video_filename.rfind('.')]

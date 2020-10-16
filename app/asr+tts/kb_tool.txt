@@ -1,0 +1,6 @@
+PyAudio (for Microphone record)
+	https://people.csail.mit.edu/hubert/pyaudio/
+
+	sudo apt-get install python3-pyaudio
+
+

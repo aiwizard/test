@@ -1,0 +1,14 @@
+'''
+# progress
+for i in range(101):    # 0 ~ 100
+    time.sleep(0.01)    # 0.01초 대기
+
+    p_var2.set(i)       # progress bar 의 값 설정
+    progressbar.update()   # GUI 업데이트
+
+    s = '{}%'.format(int(p_var2.get()))
+    e4.delete(0, END)
+    e4.insert(0, s)
+'''
+
+

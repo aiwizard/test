@@ -1,1 +1,20 @@
-https://davey.tistory.com/336
+내 말에 대답하는 AI 로봇 만들기
+	https://davey.tistory.com/336
+
+
+--------------------------------------------------------------------------------
+Asr library module
+	google-cloud-speech
+		https://cloud.google.com/speech-to-text/docs
+	
+	SpeechRecognition 3.8.1
+		https://pypi.org/project/SpeechRecognition
+	
+	
+	
+--------------------------------------------------------------------------------
+	http://cafe.daum.net/oracleoracle/SMAh/36?q=pyaudio
+	https://brunch.co.kr/@entaline/11
+	https://antilibrary.org/2410
+	https://blog.naver.com/bananacco/221852534315
+	

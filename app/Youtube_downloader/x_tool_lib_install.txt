@@ -1,0 +1,22 @@
+pip install pytube3
+	error 수정
+		pip show pytube3 로 lib 위치를 찾아서 extract.py 의 내용을 아래와 같이 수정
+			["Cipher"] ===> ["signatureCipher"]
+	
+	kb
+		https://python-pytube.readthedocs.io/en/latest/
+		https://python-pytube.readthedocs.io/en/latest/_modules/pytube/__main__.html#YouTube.register_on_complete_callback
+		https://stackoverflow.com/questions/62098925/why-my-youtube-video-downloader-only-downloads-some-videos-and-for-other-videos
+
+pip install pyinstaller
+	pyinstaller [--onefile] [--noconsole] [--icon] example-script.py
+
+
+apt install ffmpeg
+
+
+
+subprocess
+	https://shumagel.tistory.com/49
+	https://trouble-shooting-study.tistory.com/12
+

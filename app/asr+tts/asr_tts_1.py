@@ -17,7 +17,7 @@ requirements
 
 import speech_recognition as sr
 from gtts import gTTS
-import playsound
+from playsound import playsound
 
 import os
 import time
@@ -30,7 +30,7 @@ def reply(text, a):
     #    os.remove(file)
 
     tts.save(filename)
-    playsound.playsound(filename)
+    playsound(filename)
 
 def void_recognition():
     r = sr.Recognizer()
