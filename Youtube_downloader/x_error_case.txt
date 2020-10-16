@@ -1,38 +1,46 @@
-https://www.youtube.com/watch?v=YQHsXMglC9A
-	==> 6:06	 멈춰있다가.... 다운로드 완료 ===> 코덱 없음
+
+global 변수 사용 문제가 아닐까
+	전역변수 선언시
+		file_size = 0
+	전역변수 사용시 (l-value 로)
+		global file_size
+		file_size = stream.filesize
+	전역변수 사용시 (r-value 로)
+		... = file_size
+		
+----------------------------------------------------------------------------------------------
+
+https://www.youtube.com/watch?v=YQHsXMglC9A		==> 6:06	 멈춰있다가.... 다운로드 완료 ===> 코덱 없음
 
 	Output file #0 does not contain any stream
 	
 
-https://www.youtube.com/watch?v=xqCWiqiNYEA
-	==> 1:48:48	다운로드 완료, mp3변환 실패 ===> 코덱없음
+https://www.youtube.com/watch?v=xqCWiqiNYEA		==> 1:48:48	다운로드 완료, mp3변환 실패 ===> 코덱없음
 
 	Output file #0 does not contain any stream
 
 
-https://www.youtube.com/watch?v=BYgEn248c38
-	==> 1:59:42
+https://www.youtube.com/watch?v=BYgEn248c38		==> 1:59:42
 	
-Exception in Tkinter callback
-Traceback (most recent call last):
-  File "/usr/lib/python3.8/tkinter/__init__.py", line 1883, in __call__
-    return self.func(*args)
-  File "/home/munhwan/바탕화면/work/test/Youtube_downloader/downloader.py", line 77, in btncmd_lookup_format
-    yt = YouTube(video_url)
-  File "/home/munhwan/.local/lib/python3.8/site-packages/pytube/__main__.py", line 91, in __init__
-    self.prefetch()
-  File "/home/munhwan/.local/lib/python3.8/site-packages/pytube/__main__.py", line 183, in prefetch
-    self.js_url = extract.js_url(self.watch_html)
-  File "/home/munhwan/.local/lib/python3.8/site-packages/pytube/extract.py", line 143, in js_url
-    base_js = get_ytplayer_config(html)["assets"]["js"]
-  File "/home/munhwan/.local/lib/python3.8/site-packages/pytube/extract.py", line 202, in get_ytplayer_config
-    raise RegexMatchError(caller="get_ytplayer_config", pattern="config_patterns")
-pytube.exceptions.RegexMatchError: get_ytplayer_config: could not find match for config_patterns
+	Exception in Tkinter callback
+	Traceback (most recent call last):
+	  File "/usr/lib/python3.8/tkinter/__init__.py", line 1883, in __call__
+	    return self.func(*args)
+	  File "/home/munhwan/바탕화면/work/test/Youtube_downloader/downloader.py", line 77, in btncmd_lookup_format
+	    yt = YouTube(video_url)
+	  File "/home/munhwan/.local/lib/python3.8/site-packages/pytube/__main__.py", line 91, in __init__
+	    self.prefetch()
+	  File "/home/munhwan/.local/lib/python3.8/site-packages/pytube/__main__.py", line 183, in prefetch
+	    self.js_url = extract.js_url(self.watch_html)
+	  File "/home/munhwan/.local/lib/python3.8/site-packages/pytube/extract.py", line 143, in js_url
+	    base_js = get_ytplayer_config(html)["assets"]["js"]
+	  File "/home/munhwan/.local/lib/python3.8/site-packages/pytube/extract.py", line 202, in get_ytplayer_config
+	    raise RegexMatchError(caller="get_ytplayer_config", pattern="config_patterns")
+	pytube.exceptions.RegexMatchError: get_ytplayer_config: could not find match for config_patterns
 
 
 
-https://www.youtube.com/watch?v=gRpa42TsT9g
-	==> 2:22:42
+https://www.youtube.com/watch?v=gRpa42TsT9g		==> 2:22:42
 
 	X Error of failed request:  BadLength (poly request too large or internal Xlib length error)
 	  Major opcode of failed request:  139 (RENDER)
@@ -40,8 +48,8 @@ https://www.youtube.com/watch?v=gRpa42TsT9g
 	  Serial number of failed request:  1898
 	  Current serial number in output stream:  1917
 
-https://www.youtube.com/watch?v=6q4DSKFn_k8
-	==> 2:30:43
+
+https://www.youtube.com/watch?v=6q4DSKFn_k8		==> 2:30:43
 	
 	X Error of failed request:  BadLength (poly request too large or internal Xlib length error)
 	  Major opcode of failed request:  139 (RENDER)
@@ -49,8 +57,8 @@ https://www.youtube.com/watch?v=6q4DSKFn_k8
 	  Serial number of failed request:  1729
 	  Current serial number in output stream:  1746
 
-https://www.youtube.com/watch?v=drQY0hZ3fGU
-	==> 4:07:13
+
+https://www.youtube.com/watch?v=drQY0hZ3fGU		==> 4:07:13
 	
 	X Error of failed request:  BadLength (poly request too large or internal Xlib length error)
 	  Major opcode of failed request:  139 (RENDER)
@@ -59,8 +67,7 @@ https://www.youtube.com/watch?v=drQY0hZ3fGU
 	  Current serial number in output stream:  1712
 
 
-https://www.youtube.com/watch?v=1VzFkIzfDC4
-	==>4:24:22	다운로드 완료: 265.6 MB (265,553,245 바이트)
-				mimetype="audio/webm" abr="160kbps" codec="opus"
-			mp3 변환 완료: 253.8 MB (253,795,053 바이트)
-			
+https://www.youtube.com/watch?v=1VzFkIzfDC4		==>4:24:22	다운로드 완료: 265.6 MB (265,553,245 바이트)
+	mimetype="audio/webm" abr="160kbps" codec="opus"
+	mp3 변환 완료: 253.8 MB (253,795,053 바이트)
+

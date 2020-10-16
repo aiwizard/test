@@ -13,12 +13,10 @@
 			yt = YouTube(video_link)
 			video = yt.get('mp4', '720p')
 
-	Pytube 다운로드 진행상황
+	Callback 이용한 다운로드 진행상황
 		https://blog.naver.com/skyshin0304/221628569676
-
 	쓰레드
-	
-	다운로드 대상의 size 알 수 있나?
+	exception handling
 	
 	정규식
 		https://digiconfactory.tistory.com/243
@@ -50,6 +48,11 @@
 
 ------------------------------------------------------------------------------------------------
 Kb
+	Pytube
+		pip install pytube3
+		https://python-pytube.readthedocs.io/en/latest/
+		https://python-pytube.readthedocs.io/en/latest/_modules/pytube/__main__.html#YouTube.register_on_complete_callback
+		
 	위젯
 		https://blog.naver.com/shining0721/221958907424
 
