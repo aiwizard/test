@@ -74,11 +74,12 @@ sbY.grid(row=2, column=1, columnspan=2, sticky="nse")
 listbox.config(yscrollcommand=sbY.set)
 
 # Scrollbar - horizontal
+'''
 sbX = Scrollbar(root, orient="horizontal")
 sbX.config(command=listbox.xview)
 sbX.grid(row=2, column=1, columnspan=2, sticky="ews")
 listbox.config(xscrollcommand=sbX.set)
-
+'''
 
 # ProgressBar
 p_var2 = DoubleVar()    # 실수형 변수
