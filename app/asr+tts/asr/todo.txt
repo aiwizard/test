@@ -1,0 +1,63 @@
+
+https://www.google.com/search?biw=1042&bih=736&ei=99uKX8DLGtzemAWKv5WYDw&q=kaldi+한국어
+http://nblog.syszone.co.kr/archives/9788
+	음성인식모델로 음성합성 데이터 만들기 (kaldi 음성 인식 모델 환경 구현)
+	KALDI 음성 인식 개발 환경 구현하기
+	
+DAFIT/903 - 음성단어 분류 알고리즘
+	https://whereisend.tistory.com/79	<DAFIT> 03 음성 단어 분류기 알고리즘 구현 - 01 데이터 셋 준비 과정	
+	https://whereisend.tistory.com/81	<DAFIT> 03 음성 단어 분류기 알고리즘 구현 02 - 오디오 데이터의 이해과정 문제
+	https://whereisend.tistory.com/82	<DAFIT> 03 음성 단어 분류기 알고리즘 구현 03 - 오디오 데이터의 이해과정 문제
+	https://whereisend.tistory.com/85	<DAFIT> 03 음성 단어 분류기 알고리즘 구현 04 - 오디오 데이터의 이해과정 문제
+
+음성/음악신호+머신러닝 초심자를 위한 가이드
+	[1편]	http://keunwoochoi.blogspot.com/2016/01/blog-post.html
+	[2편]	http://keunwoochoi.blogspot.com/2016/03/2.html
+	[3편]	http://keunwoochoi.blogspot.com/2016/12/3.html
+
+음서인식 딥러닝 모델 - simple MLP, CNN (사람이 말한 숫자를 인식해보자)
+	https://m.blog.naver.com/PostView.nhn?blogId=sexyit_2019&logNo=221603292906
+
+음성인식 기초 이해하기
+	https://newsight.tistory.com/294
+
+Librosa로 리듬추출하기
+	https://hhhhhhhong.tistory.com/39
+
+librosa
+	https://librosa.org
+
+오디오 데이터 전처리
+	https://hyunlee103.tistory.com/54	(1) Waveform
+	https://hyunlee103.tistory.com/47	(2) Fourier Transform & Spectrogram
+	https://hyunlee103.tistory.com/45	(3) Cepstrum Anlaysis
+	https://hyunlee103.tistory.com/46	(4) Mel Filter Bank
+	https://hyunlee103.tistory.com/48	(5) MFCC
+	
+[음성인식] 5.2 Gaussian Mixture Model(GMM)
+	https://hyunlee103.tistory.com/56
+	
+[Python 음성 데이터 분석]
+	https://hyongdoc.tistory.com/400	[파이썬으로 음성데이터 분석하기] 소리와 데이터의 형태
+	https://hyongdoc.tistory.com/401	Librosa 라이브러리를 이용한 주파수 분석
+	https://hyongdoc.tistory.com/402	Librosa로 Mel Spectrogram 생성
+	https://hyongdoc.tistory.com/403	MFCC 개념 및 Librosa 사용방법
+	https://hyongdoc.tistory.com/404	Librosa 라이브러리 사용법
+
+
+librosa 를 이용한 Audio 전처리
+	https://ahnjg.tistory.com/83
+
+librosa.load 와 scipy.io.wavfile.read 의 차이
+	https://ahnjg.tistory.com/84
+
+Librosa python library로 음성파일 분석하기
+	https://banana-media-lab.tistory.com/7
+
+librosa 패키지로 스펙트럼 그리기
+	https://hanseokhyeon.tistory.com/10
+
+스펙트럼 그리기
+	https://maclab-kaist.github.io/DeepArt/classify_tsne/classify_tsne_2_extract_spectrum.html
+
+

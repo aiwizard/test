@@ -1,0 +1,9 @@
+https://kaen2891.tistory.com/49		flac dataset wav로 변환 및 downsampling
+https://kaen2891.tistory.com/38		Python 음성 신호 Down sampling, Resampling
+
+https://kaen2891.tistory.com/39		스펙트로그램
+
+
+https://blog.naver.com/gudrb1707/221276702029
+https://blog.naver.com/gudrb1707/221283491146
+

@@ -1,0 +1,4 @@
+Kaldi, Kaldi gstreamer 설치 및 예제 실행
+	https://hanseokhyeon.tistory.com/entry/Kaldi-Kaldi-gstreamer-설치-및-예제-실행
+
+

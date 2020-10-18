@@ -1,6 +1,3 @@
-preprocess
-	https://blog.naver.com/gudrb1707/221276702029
-	https://blog.naver.com/gudrb1707/221283491146
 
 asr
 	https://dodonam.tistory.com/168
