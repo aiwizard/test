@@ -1,0 +1,3 @@
+sudo apt install python3-pyqt5
+
+https://pythonprogramminglanguage.com/pyqt-tutorials/

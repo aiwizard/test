@@ -1,0 +1,17 @@
+Raspberry Pi 카메라로 사물 인식 및 음성 출력
+	https://jasmine125.tistory.com/953
+
+음성 인식하고 대답하는 AI 로봇 만들기
+	https://davey.tistory.com/336
+
+
+
+이미지 속 문자 검출 및 인식하기(OCR)
+	https://bskyvision.com/684
+
+이미지 속 문자 인식한 것을 음성 파일로 변환해주기
+	https://bskyvision.com/689
+	
+Extract text from image
+	https://pythonprogramminglanguage.com/extract-text-from-image/
+

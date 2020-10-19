@@ -1,0 +1,27 @@
+# 우분투에서 OCR
+	https://bskyvision.com/684
+
+	# 설치
+		# 먼저 Tesseract OCR 패키지를 설치
+			sudo apt install tesseract-ocr
+
+		# 한글 텍스트를 다루고 싶다면, 다음과 같이 명령
+			sudo apt-get install tesseract-ocr-script-hang tesseract-ocr-script-hang-vert
+
+		# 또한 파이썬에서 Tesseract OCR을 사용하기 위해서는 pytesseract도 설치
+			sudo pip3 install pytesseract
+
+	# Usage
+		$ tesseract ocr_test.jpeg stdout -l Hangul		# 화면으로 결과 출력
+		$ tesseract ocr_test.jpeg ocr_result.txt -l Hangul	# 파일로 저장
+
+
+# 파이썬에서 OCR
+	https://webnautes.tistory.com/947
+	
+	# 라즈베리파이에서 설치
+		sudo apt install tesseract-ocr tesseract-ocr-kor
+	
+	# 한글 지원, 파이썬 관련은 우분투에서와 동일함
+	
+		
