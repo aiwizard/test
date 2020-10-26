@@ -6,3 +6,7 @@ Keras 모델을 그림으로 저장하기
 의상 분류기 만들어서 훈련시키고 테스트하기1	https://bskyvision.com/696
 의상 분류기 만들어서 훈련시키고 테스트하기2	https://bskyvision.com/699
 
+
+머신러닝, 데이터 준비 방법 - 데이터 제공 사이트, 전처리 방법
+	https://youtu.be/5KSkNfX1wpU
+

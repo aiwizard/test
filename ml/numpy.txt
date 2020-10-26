@@ -1,0 +1,13 @@
+
+# Numpy 배열 인덱싱
+https://island-developer.tistory.com/69?category=799449
+
+# np.arange.reshape
+https://0ver-grow.tistory.com/709
+
+# Numpy Broadcasting
+https://0ver-grow.tistory.com/711?category=931716
+
+# Numpy, array, 함수, 행렬
+https://0ver-grow.tistory.com/710?category=931716
+

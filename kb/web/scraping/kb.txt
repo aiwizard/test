@@ -1,0 +1,44 @@
+이수안컴퓨터연구소
+조코딩
+나도코딩
+
+------------------------------------- Crawling, Scraping
+https://beomi.github.io/gb-crawling/posts/2017-02-27-HowToMakeWebCrawler-With-Selenium.html
+
+https://www.youtube.com/watch?v=pQ7dOg9c4NI		Selenium 구글 이미지 스크래핑
+	https://hanryang1125.tistory.com/5		위와 거의 비슷한 소스 설명 웹사이트
+https://www.youtube.com/watch?v=1b7pXC1-IbE		가상환경 만들어서 셀레늄으로 구글 이미지 스크레이핑
+
+
+셀레늄으로 인스타그램 크롤링하기
+	https://www.youtube.com/watch?v=wsT3C3OH_QQ
+
+파이썬 자동화 셀레늄으로 웹사이트 매크로 제작
+	https://www.youtube.com/watch?v=2EBrICPZVLY
+
+웹페이지 스크롤
+	Jquery Scroll값 위치로 이동하기(window.scrollTo)
+		https://herojoon-dev.tistory.com/16
+	셀레늄 웹 드라이버를 사용하여 웹 페이지 스크롤
+		https://nasanasa.tistory.com/171
+
+[봇 차단 회피 방법]
+	이미지를 다운로드 할때 나무위키 등 사이트의 경우 봇이 접근하는 것을 차단해서 
+		urllib.request.urlretrieve(imgUrl, "test.jpg") 줄에서 
+		urllib.error.HTTPError: HTTP Error 403: Forbidden 에러가 날 수 있다.
+		그럴때는 아래와 같이 브라우저 인것 처럼 속이는 header를 추가하면 정상적으로 크롤링 할 수 있다!
+			opener=urllib.request.build_opener()
+			opener.addheaders=[('User-Agent','Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1941.0 Safari/537.36')]
+			urllib.request.install_opener(opener)
+			urllib.request.urlretrieve(imgUrl, "test.jpg")
+
+[자동 더블클릭 매크로]
+	from selenium import webdriver  
+	from selenium.webdriver import ActionChains
+	driver=webdriver.Chrome(executable_path="chromedriver.exe")
+	driver.get('http://testautomationpractice.blogspot.com/')
+	driver.maximize_window()
+	element=driver.find_element_by_xpath('//*[@id="HTML10"]/div[1]/button')
+	actions=ActionChains(driver)
+	actions.double_click(element).perform()
+

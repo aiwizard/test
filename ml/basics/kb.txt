@@ -1,0 +1,49 @@
+
+-------------------------------------------------------- 정규화
+https://search.daum.net/search?w=tot&DA=YZR&t__nil_searchbox=btn&sug=&sugo=&sq=&o=&q=이미지%20정규화
+http://cafe.daum.net/GOMFC/SQax/25?q=이미지%20정규화
+http://cafe.daum.net/oracleoracle/SelJ/171?q=이미지%20정규화
+https://en.wikipedia.org/wiki/Audio_normalization
+
+https://blog.naver.com/cheeryun/221378792643		전처리로 정규화를 시키는 장점
+https://blog.naver.com/mrp/221672080759				정규화와 표준화
+https://cafe.naver.com/mathworks/10243				이미지 분석에서 정규화 코딩
+
+-------------------------------------------------------- 
+https://ellune.tistory.com/55?category=793931		어설픈 인공지능 개발자(?)의 TTS 만들기
+http://cafe.daum.net/oracleoracle/Sedp/544			텐써 플로우 2.x 에서 gan 예제 실습
+
+https://brunch.co.kr/@yysttong/11						Python: m.l with Keras #2
+
+https://riveryun.tistory.com/22		Data augmentation
+	Dropout
+	Batch Normalization
+	Transfer learning
+	Pretraining
+	One-shot, Zero-shot learning
+	
+자연어 처리와 강화학습, 이미지인식, 음성인식
+	https://doooob.tistory.com/12
+	
+배치 정규화, 과적합
+	https://welcome-to-dewy-world.tistory.com/90
+배치, 미니배치, 에폭
+	https://welcome-to-dewy-world.tistory.com/86
+
+
+-------------------------------------------------------- 
+AI 이미지 인식, 초보자 위한 5가지 인기있는 오픈 소스 데이터 셋
+	http://www.aitimes.kr/news/articleView.html?idxno=15924
+자동차 번호판 인식
+	https://dalgonakit.tistory.com/130
+규동 메뉴 이미지 판정하기
+	https://codegongbang.tistory.com/17
+CNN 으로 이미지 분류하기
+	https://codegongbang.tistory.com/16
+OpenCV-Python Tutorials
+	https://surpassing.tistory.com/813
+	https://surpassing.tistory.com/798
+OpenCV install download
+	https://blog.naver.com/PostView.nhn?blogId=samsjang&logNo=220498694383&categoryNo=66&parentCategoryNo=0&viewDate=&currentPage=6&postListTopCurrentPage=1&from=postList&userTopListOpen=true&userTopListCount=10&userTopListManageOpen=false&userTopListCurrentPage=6
+	https://www.lfd.uci.edu/~gohlke/pythonlibs/
+	

@@ -4,3 +4,5 @@ https://blog.naver.com/scyan2011/221730146798
 Django에서 간단한 TTS 구현
 	https://yonghyunlee.gitlab.io/log/django-tts/
 
+https://info-lab.tistory.com/234
+

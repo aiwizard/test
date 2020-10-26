@@ -1,0 +1,57 @@
+enumerate and formatted stirng
+	t = [1, 5, 7, 33, 39, 52]
+	for i, v in enumerate(t):
+		print("index : {}, value: {}".format(i, v))
+
+	for i, v in enumerate(t):
+		print(f"index : {i}, value: {v}")
+
+	for i, v in enumerate(t):
+		print("index : %d, value: %d" %(i, v))
+
+
+https://hybae430.tistory.com/16
+	exception	예외 처리
+	raise		예외 발생시키기
+	assert		상태를 검증하는데 사용되며 검증식이 거짓일 경우 항상 AssertionError가 발생
+
+기본 자료형
+	()	튜플		# 특징: 변경불가
+	[]	리스트
+	{}	딕셔너리, 셋
+
+Tkinter
+	https://rootiel.tistory.com/34
+		Frame, Scrollbar
+
+파이썬 출력문장 색상
+	https://info-lab.tistory.com/230?category=204989
+	http://parkjuwan.dothome.co.kr/wordpress/2017/06/24/text-color-py/
+
+exception
+	Exceptoin
+	ValueError
+	IndexError
+	ZeroDivisionError
+	TypeError
+	KeyError
+	FileNotFoundError
+
+
+    try:
+        cursel = listbox.curselection()
+    except IndexError as error:
+        print(error)
+        msgbox.showinfo("알림", "다운로드할 포맷을 위에서 선택하세요")
+        return
+    except ValueError as error:
+        print('value error')
+        return
+    except Exception:
+        print("error occurred")
+        return
+    else:
+        print('예외 없을 시')
+    finally:
+        print('항상 실행, 메모리 해제 등에 사용')
+
