@@ -1,4 +1,4 @@
-
+﻿
 ## 우분투 설치 후, 해야 할 것들
 	https://luckyyowu.tistory.com/409
 
@@ -47,6 +47,10 @@
 	sudo apt install mesa-common-dev	//OpenGL library
 	sudo install libglu1-mesa-dev -y	//Additional package
 	sudo ./qt-unified-linux-x64-3.2.3-online.run
+
+### opencv
+	pip install opencv-python
+	pip install opencv-contrib-python
 
 ### 기타
 	sudo dpkg -i ./google-chrome-stable_current_amd64.deb
