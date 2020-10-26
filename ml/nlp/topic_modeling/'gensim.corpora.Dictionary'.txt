@@ -1,0 +1,37 @@
+위키독스 LSA실습 1-gensim 라이브러리 이용
+	https://sosoeasy.tistory.com/347
+텍스트 분석 - 네이버 카페(비건 디저트) : 토픽모델링 (페르소나 설정, corpora, models)
+	https://steadiness-193.tistory.com/147
+	
+
+라이브러리 투어 2. gensim-corpora
+	https://blog.naver.com/pdc222/221360553916
+라이브러리 투어 3. LSI model 적용해보기
+	https://blog.naver.com/pdc222/221385610803
+CountVectorizer + pyLDAvis (N-gram LDA)
+	https://codingfactory.tistory.com/58
+토픽모델링 - LDA (gensim 사용)
+	https://joyhong.tistory.com/138
+		임베딩 - Glove, FastText, mecab, Word2Vec
+[파이썬을 이용한 토픽모델링] step3. Gensim 과 Mallet 을 이용한 LDA 모델링
+	https://happy-chipmunk.tistory.com/30
+LDA를 사용하여 한글 데이터 토픽 모델링하기
+	https://happy-obok.tistory.com/5
+
+
+
+
+네이버 다음 API활용 검색어 긁어오기 
+	https://blog.naver.com/soowon0109/221607786747
+
+파이썬 한글 형태소 분석기 KoNLPy 설치방법 및 에러 해결
+	https://ellun.tistory.com/46
+
+
+
+	
+gensim.corpora.dictionary.Dictionary
+	https://radimrehurek.com/gensim/corpora/dictionary.html
+
+How bag of words? (with Text)
+	https://blog.naver.com/pdc222/220714583295

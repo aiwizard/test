@@ -1,0 +1,58 @@
+https://webnautes.tistory.com/category/Python/자연어처리%20%26형태소%20분석기
+
+
+pip install konlpy
+pip install gensim
+pip install tqdm
+pip install tomotopy	#토픽 모델링 툴 (https://bab2min.github.io/tomotopy/v0.9.0/kr/index.html)
+
+
+KoNLPy
+	KoNLPy
+		https://konlpy.org/ko/latest/
+	
+	KoNLPy 를 사용한 한글 명사 추출 및 빈도 계산
+		https://liveyourit.tistory.com/57
+
+	mecab-ko
+		https://bitbucket.org/eunjeon/mecab-ko/src/master/
+
+
+토픽 모델링
+	https://brunch.co.kr/@jiheon0105/38
+
+	https://happy-obok.tistory.com/5	LDA를 사용하여 한글 데이터 토픽 모델링하기
+	https://diane-space.tistory.com/42		[Kaggle] TED-Talk 토픽모델링 (Topic modeling)
+
+	https://www.google.com/search?q=토픽모델링+파이썬
+	https://bab2min.tistory.com/633		tomotopy로 쉽게 토픽 모델링 실시하기
+	https://bab2min.tistory.com/634		[토픽 모델링] 대량의 문헌을 주제에 따라 클러스터링해보기
+	
+
+데이터 마이닝
+	텍스트 마이닝을 통한 (IP 기반 모바일 게임) 리뷰 분석
+		https://saintbeller96.tistory.com/9	#1	구글 플레이스토어 크롤링 with selenium and beautifulsoup4
+		https://saintbeller96.tistory.com/10	#2	구글 플레이스토어 크롤링 with selenium and beautifulsoup4
+		https://saintbeller96.tistory.com/11	#3	구글 플레이스토어 크롤링 with selenium and beautifulsoup4
+		https://saintbeller96.tistory.com/13	#4 한글 텍스트 형태소 분석
+		https://saintbeller96.tistory.com/14	#5 빈도수 분석과 n-gram
+		https://saintbeller96.tistory.com/16	#6 토픽 모델링 (***)
+		https://saintbeller96.tistory.com/17	#7 로지스틱 회귀 분석
+		https://saintbeller96.tistory.com/18	#8	결과 토의 및 결론
+
+	스팀 게임 추천 시스템 with 파이썬
+		https://saintbeller96.tistory.com/19	#1 프로젝트 개요
+		https://saintbeller96.tistory.com/20	#2 스팀 크롤링 준비
+		https://saintbeller96.tistory.com/21	#3 데이터베이스 설계 및 mariaDB 연동
+
+	연관 규칙 마이닝
+		https://saintbeller96.tistory.com/23	#1 FP-Growth 알고리즘
+		https://saintbeller96.tistory.com/23	#2 FP-Growth 파이썬 구현
+
+기타
+	https://bab2min.tistory.com/614		상위어 자동 추출(Hypernym Detection) 기법 정리
+	https://bab2min.tistory.com/625		자동 요약 기법의 연구 동향 정리
+	https://bab2min.tistory.com/612		AdaGram : 동음이의어를 구분하는 Word2Vec
+	https://bab2min.tistory.com/611		Word2Vec을 이용한 한국어 관련어 네트워크 보기
+	https://bab2min.tistory.com/610		[Python] 디리클레 분포 추정하기
+		
