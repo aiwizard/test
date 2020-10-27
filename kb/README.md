@@ -21,15 +21,17 @@
 
 
 ### venv 설치 및 가상환경 생성/활성화
-	sudo apt install python3-venv
-	python -m venv <virtual-env-name>
+	설치
+		sudo apt install python3-venv
+	생성
+		python -m venv <virtual-env-name>
 	리눅스
 		cd <virtual-env-name>/bin
 		source ./activate
 	윈도우
 		cd <virtual-env-name>\Scripts
 		activate
-		
+
 
 ## Install s/w
 ### 아래아 한글 뷰어
@@ -87,7 +89,7 @@
 
 	pip install hgtk
 
-	sudo apt-get install libsdl-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libsmpeg-dev libportmidi-dev libavformat-dev libswscale-dev libjpeg-dev libfreetype6-dev
+	sudo apt install libsdl-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libsmpeg-dev libportmidi-dev libavformat-dev libswscale-dev libjpeg-dev libfreetype6-dev
 
 	sudo apt install tesseract-ocr
 	sudo apt install tesseract-ocr-script-hang tesseract-ocr-script-hang-vert
