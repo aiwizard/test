@@ -50,7 +50,7 @@
 	sudo install libglu1-mesa-dev -y	//Additional package
 	sudo ./qt-unified-linux-x64-3.2.3-online.run
 
-### opencv
+### opencv (python3 버전 맞나?)
 	pip install opencv-python
 	pip install opencv-contrib-python
 
