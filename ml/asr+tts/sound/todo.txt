@@ -2,7 +2,7 @@ PyAudio
 	https://people.csail.mit.edu/hubert/pyaudio/
 
 matplotlib 실행 안되는 오류시
-	sudo apt-get install --reinstall libxcb-xinerama0
+	sudo apt install --reinstall libxcb-xinerama0
 
 
 

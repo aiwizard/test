@@ -1,0 +1,34 @@
+pip 설치
+	sudo apt install python3-pip
+
+설치 결과 위치
+	munhwan@munhwan-VGN-Z56LG-R:~/___mywork$ pip3 --version
+	pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.8)
+
+
+업그레이드 pip
+	munhwan@munhwan-VGN-Z56LG-R:~/___mywork$ pip3 install --upgrade pip
+	Collecting pip
+	  Downloading pip-20.2.4-py2.py3-none-any.whl (1.5 MB)
+	     |████████████████████████████████| 1.5 MB 1.7 MB/s 
+	Installing collected packages: pip
+	  WARNING: The scripts pip, pip3 and pip3.8 are installed in '/home/munhwan/.local/bin' which is not on PATH.
+	  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+	Successfully installed pip-20.2.4
+
+
+업그레이드 후 버전 확인 및 위치 변경 확인
+	munhwan@munhwan-VGN-Z56LG-R:~/바탕화면$ pip3 --version
+	pip 20.2.4 from /home/munhwan/.local/lib/python3.8/site-packages/pip (python 3.8)
+
+	munhwan@munhwan-VGN-Z56LG-R:~/___mywork$ pip --version
+	pip 20.2.4 from /home/munhwan/.local/lib/python3.8/site-packages/pip (python 3.8)
+
+
+위치 확인
+	munhwan@munhwan-VGN-Z56LG-R:~/___mywork$ whereis pip
+	pip: /usr/local/bin/pip3.8 /usr/local/bin/pip
+
+	munhwan@munhwan-VGN-Z56LG-R:~/___mywork$ whereis pip3
+	pip3: /usr/bin/pip3 /usr/local/bin/pip3.8 /usr/local/bin/pip3 /usr/share/man/man1/pip3.1.gz
+

@@ -158,6 +158,9 @@ for topic in topics:    #num_topics=10 이므로 10개로 압축된 토픽을 �
     print(topic)
 
 #시각화 - 각각의 토픽을 2차원 공간에서 시각적으로 나타낸다
+print('시각화 - 각각의 토픽을 2차원 공간에서 시각적으로 나타낸다')
 import pyLDAvis.gensim
 vis = pyLDAvis.gensim.prepare(FA_lda, FA_dtm, FA_dic)
 pyLDAvis.save_html(vis, '호불호300LDA.html')    # 토픽모델링 결과를 저장
+print('done\n\n')
+

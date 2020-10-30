@@ -1,0 +1,13 @@
+[Mini Project] 한글 자음,모음 문자로 합치기
+	https://blog.naver.com/sooftware/221625399849
+	https://blog.naver.com/sooftware/221625076397
+
+파이썬 끝말잇기 코드 (with 두음법칙)
+	http://blog.pbj.kr/221552896123
+
+한글 자모 분리기 hgtk
+	https://blog.naver.com/qbxlvnf11/221535709781
+
+Librosa python library로 음성파일 분석하기 - 자소 단위로 음성 데이터 자르기
+	https://banana-media-lab.tistory.com/7
+

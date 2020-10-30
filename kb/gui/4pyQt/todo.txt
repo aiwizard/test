@@ -1,6 +1,13 @@
+설치
+	sudo apt install python3-pyqt5
+	
+
+
 http://pythonstudy.xyz/python/article/108-PyQt-QtDesigner
 https://luckygg.tistory.com/169
 https://m.blog.naver.com/sisosw/221419779178
 https://has3ong.tistory.com/23
 https://m.blog.naver.com/demonic3540/221190342745
+
+https://www.youtube.com/results?search_query=pyqt5
 

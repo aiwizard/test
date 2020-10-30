@@ -1,3 +1,8 @@
+설치
+	사이트에서 'qt-unified-linux-x64-3.2.3-online.run' 다운로드 후,
+	실행권한 설정하고 chmod +x 'qt-unified-linux-x64-3.2.3-online.run' 
+	실행
+
 https://geeks-mimic.tistory.com/28
 https://geeks-mimic.tistory.com/31
 https://ialsolikestudy.tistory.com/43

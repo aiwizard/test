@@ -22,3 +22,7 @@ Raspberry Pi 카메라로 사물 인식 및 음성 출력
 Raspberry Pi 3에 Qt5 설치
 	https://webnautes.tistory.com/957?
 
+	
+[라즈베리파이 강좌] OpenCV 설치하기
+	https://blog.naver.com/roboholic84/221139256044
+

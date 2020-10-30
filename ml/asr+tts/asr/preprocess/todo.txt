@@ -7,3 +7,51 @@ https://kaen2891.tistory.com/39		스펙트로그램
 https://blog.naver.com/gudrb1707/221276702029
 https://blog.naver.com/gudrb1707/221283491146
 
+무음 구간 기준으로 자르기
+
+
+Librosa로 리듬추출하기
+	https://hhhhhhhong.tistory.com/39
+토닥토닥 파이썬 - 사운드를 위한 딥 러닝 (텐서플로우 v2)
+	https://wikidocs.net/book/2963
+음성 명령 예측
+	https://wikidocs.net/64077
+03 음성 단어 분류기 알고리즘 구현 02 - 오디오 데이터의 이해 과정 문제
+	https://whereisend.tistory.com/81
+Python을 이용한 오디오 신호 분석 - FFT
+	https://m.blog.naver.com/gaechuni/221649637954
+음악 장르 classification - 1. 데이터 전처리(Python)
+	https://hyunlee103.tistory.com/39
+오디오 데이터 전처리 (이론)
+	https://hyunlee103.tistory.com/35
+오디오 데이터 전처리 (Python Coding)
+	https://hyunlee103.tistory.com/36
+Speech dataset Processing
+	https://kaen2891.tistory.com/category/딥러닝/Speech%20dataset%20Processing
+librosa 패키지로 스펙트럼 그리기
+	https://hanseokhyeon.tistory.com/entry/파이썬에서-librosa-패키지로-스펙트럼-그리기
+librosa 를 이용한 간단한 데이터 시각화
+	https://dacon.io/competitions/official/235616/codeshare/1277
+FFT 와 librosa 라이브러리
+	https://rosypark.tistory.com/27
+librosa 패키지로 스펙트럼 그리기
+	https://hanseokhyeon.tistory.com/10
+LIBROSA 기본 사용법
+	https://bora0313.tistory.com/14
+	
+[Pytorch] 음성 신호 전처리 (spectrogram, melspectrogram)
+	https://ahnjg.tistory.com/93
+
+librosa 를 이용한 Audio 전처리
+	https://ahnjg.tistory.com/83
+
+[Python 음성 데이터 분석]
+	Librosa 라이브러리 사용법
+		https://hyongdoc.tistory.com/404
+	Librosa로 Mel Spectrogram 생성
+		https://hyongdoc.tistory.com/402
+
+
+Librosa python library로 음성파일 분석하기
+	https://banana-media-lab.tistory.com/7
+	

@@ -1,4 +1,4 @@
-### 배치
+### 위젯 배치
 	pack
 	grid
 	place
@@ -21,7 +21,5 @@
 ### canvas
 	https://hcr3066.tistory.com/98
 
-
-### PyQt5
-https://www.youtube.com/results?search_query=pyqt5
-
+### Frame, Scrollbar
+	https://rootiel.tistory.com/34

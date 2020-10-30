@@ -20,10 +20,6 @@ https://hybae430.tistory.com/16
 	[]	리스트
 	{}	딕셔너리, 셋
 
-Tkinter
-	https://rootiel.tistory.com/34
-		Frame, Scrollbar
-
 파이썬 출력문장 색상
 	https://info-lab.tistory.com/230?category=204989
 	http://parkjuwan.dothome.co.kr/wordpress/2017/06/24/text-color-py/

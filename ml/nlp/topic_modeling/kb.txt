@@ -1,0 +1,4 @@
+설치
+	sudo apt install -y openjdk-8-jre chromium-chromedriver
+	pip3 install selenium konlpy gensim pyLDAvis
+	
