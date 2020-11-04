@@ -10,6 +10,11 @@ from gtts import gTTS
 import os
 
 tts = gTTS(text='Good morning', lang='en')
-tts.save("good.mp3")
-os.system("mpg321 good.mp3")
+
+outfile = "/tmp/output.mp3"
+tts.save(outfile)
+
+# play sound and remove it	
+os.system("mpg321 {}".format(outfile))
+os.system("rm {}".format(outfile))
 

@@ -1,0 +1,18 @@
+BeautifulSoup으로 크롤링하기
+	https://velog.io/@swhybein/python-BeautifulSoup으로-크롤링하기
+
+BeautifulSoup을 이용하여 크롤러 만들기 - 1일차
+	https://chick-developer.tistory.com/4
+
+BeautifulSoup을 이용해서 랭킹 JSON으로 만들기
+	https://www.acmicpc.net/blog/view/16
+
+BeautifulSoup의 find와 findAll의 차이
+	https://pydole.tistory.com/entry/find와-findAll의-차이
+
+
+https://m.blog.naver.com/with_msip/221844584021
+	http://www../robots.txt
+	
+
+

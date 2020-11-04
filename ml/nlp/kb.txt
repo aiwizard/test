@@ -1,0 +1,4 @@
+자연어 처리(NLP)를 위한 작업
+	http://cafe.daum.net/flowlife/S2Ul/28?q=gensim%20word2vec
+
+

@@ -1,0 +1,57 @@
+word2vec
+	https://charstring.tistory.com/50
+임베딩 - Word2Vec
+	https://joyhong.tistory.com/132
+비정형 데이터 - Word2Vec
+	https://data-science-hi.tistory.com/35
+
+
+
+
+Gensim 과 Word2Vec
+	https://blog.naver.com/je_un/221600503161
+
+word2vec, auto labeling, text generation, abstrative summarization에 관한 초보적인 실험
+	https://ins-kbrow.tistory.com/2
+
+Gensim Word2Vec Fine-tuning
+	https://jjdeeplearning.tistory.com/6
+
+단어 임베딩을 이용한 텍스트 유사성
+	https://jrc-park.tistory.com/73
+Word2Vec을 활용한 단어 시각화
+	https://jrc-park.tistory.com/124
+	
+gensim - Word2vec (텍스트 파일 정제, 모델 파일 생성)
+	https://blog.naver.com/seol916/221385676753
+
+Word2Vec (gensim), KMeans 이용해서 unsupervised learning하기 (자연어처리)
+	https://bangseogs.tistory.com/95
+Word2Vec (gensim), pytorch 이용해서 binary classification하기 (자연어처리)
+	https://bangseogs.tistory.com/94
+Word2vec을 응용한 컨텐츠 클러스터링
+	https://brunch.co.kr/@mobiinside/950
+
+	
+~/다운로드/GoogleNews-vectors-negative300 이용
+	Word2Vec 소개 및 실습
+		https://blog.naver.com/wideeyed/221349385092
+	자연어 처리를 위한 패키지3 - Gensim 의 Word2vec 으로 토픽모델링
+		https://ebbnflow.tistory.com/153
+
+http://cafe.daum.net/KJ2026/gT5h/18?q=word2vec%20GoogleNews-vectors-negative300
+
+https://22-22.tistory.com/78
+
+--------------------------------------------- 여러가지
+https://ebbnflow.tistory.com/category/SW개발/AI%20Development
+	https://ebbnflow.tistory.com/153	자연어 처리를 위한 패키지3 - Gensim 의 Word2vec 으로 토픽모델링
+	https://ebbnflow.tistory.com/219	네이버 지식인 데이터 이용한 챗봇
+	https://ebbnflow.tistory.com/246	한국어 전처리 기법들
+	...
+
+
+	https://brunch.co.kr/@gimmesilver/24	word2vec으로 게임 아이템 의미 벡터 추출하기
+	https://brunch.co.kr/@goodvc78/7		브런치 작가 추천과 Word2Vec
+	https://brunch.co.kr/@goodvc78/16		Word2Vec 그리고 추천 시스템의 Item2Vec
+

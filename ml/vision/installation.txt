@@ -1,3 +1,17 @@
+opcencv 설치 방법
+	1. pip3 install opencv-python opencv-contrib-python
+	2. https://blog.naver.com/roboholic84/221629374217
+	3. 아나콘다 네이게이터에서 설치하기
+
+코덱 관련
+	sudo apt install ubuntu-restricted-extras
+
+
+
+아래는 소스 컴파일 인스톨
+
+
+
 0. 참고
 	https://blog.naver.com/roboholic84/221139256044
 
