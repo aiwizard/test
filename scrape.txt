@@ -1,0 +1,44 @@
+def GetScrapingBySelector(soup, css_selector):
+    try:
+        val = soup.select_one(css_selector)
+    except Exception as e:
+        print("Unknown Error [val]: %s, code: %s" %(str(e), css_selector))
+    else:
+        if( val ): val = val.get_text().strip()
+        else: val = 'none'
+    finally:
+        pass
+
+    return val
+
+def GetText_and_Strip(text):
+    if( text ): text = text.get_text().strip()
+    else: text = 'none'
+    
+    return text
+
+
+companyName = soup.select_one('#middle > div.h_company > div.wrap_company > h2 > a')
+
+cur_price = GetScrapingBySelector(soup, '#chart_area > div.rate_info > div > p.no_today span.blind')
+    
+    
+    # 전일대비
+    net_change_sign = GetScrapingBySelector(soup, '#chart_area > div.rate_info > div > p.no_exday > em:nth-of-type(2) > span:nth-of-type(1)')
+    net_change_rate = GetScrapingBySelector(soup, '#chart_area > div.rate_info > div > p.no_exday > em:nth-of-type(2) > span:nth-of-type(2)')
+
+    # PBR
+    pbr = GetScrapingBySelector(soup, '#_pbr')
+    
+    # 시가총액
+    #totalStock = soup.find('em', {'id': '_market_sum'})
+    totalStock = soup.select_one('#_market_sum')
+
+    opiDown = soup.select_one('span.f_down > em')    #투자 의견 지수
+
+    priceGoal = GetScrapingBySelector(soup, '#tab_con1 > div:nth-of-type(3) > table > tr:nth-of-type(1) > td > em')	#목표주가
+ 
+
+    per = soup.find('em', {'id': '_per'})               # PER
+    #per = GetScrapingBySelector(soup, '#_per')          # 동작 안함
+    per = GetText_and_Strip(per)
