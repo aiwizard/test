@@ -20,7 +20,7 @@ CR_RED = (250,50,50)
 
 FPS = 60
 
-PATH_RES = '../../../../다운로드/Game_res/PyShooting/'
+PATH_RES = '../../../../다운로드/res_game/PyShooting/'
 
 class Fighter(pygame.sprite.Sprite):
     def __init__(self):
