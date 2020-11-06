@@ -24,8 +24,8 @@ cur_price = GetScrapingBySelector(soup, '#chart_area > div.rate_info > div > p.n
     
     
     # 전일대비
-    net_change_sign = GetScrapingBySelector(soup, '#chart_area > div.rate_info > div > p.no_exday > em:nth-of-type(2) > span:nth-of-type(1)')
-    net_change_rate = GetScrapingBySelector(soup, '#chart_area > div.rate_info > div > p.no_exday > em:nth-of-type(2) > span:nth-of-type(2)')
+    net_change_sign = GetScrapingBySelector(soup, '#chart_area > p.no_exday > em:nth-of-type(2) > span:nth-of-type(1)')
+    net_change_rate = GetScrapingBySelector(soup, '#chart_area > p.no_exday > em:nth-of-type(2) > span:nth-of-type(2)')
 
     # PBR
     pbr = GetScrapingBySelector(soup, '#_pbr')
@@ -34,11 +34,14 @@ cur_price = GetScrapingBySelector(soup, '#chart_area > div.rate_info > div > p.n
     #totalStock = soup.find('em', {'id': '_market_sum'})
     totalStock = soup.select_one('#_market_sum')
 
-    opiDown = soup.select_one('span.f_down > em')    #투자 의견 지수
+	#투자 의견 지수
+    opiDown = soup.select_one('span.f_down > em')
 
-    priceGoal = GetScrapingBySelector(soup, '#tab_con1 > div:nth-of-type(3) > table > tr:nth-of-type(1) > td > em')	#목표주가
+	#목표주가
+    priceGoal = GetScrapingBySelector(soup, '#tab_con1 > div:nth-of-type(3) > table > tr:nth-of-type(1) > td > em')
  
 
     per = soup.find('em', {'id': '_per'})               # PER
-    #per = GetScrapingBySelector(soup, '#_per')          # 동작 안함
+    #per = GetScrapingBySelector(soup, '#_per')			# 동작 안함
     per = GetText_and_Strip(per)
+

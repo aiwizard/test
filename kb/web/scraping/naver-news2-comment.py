@@ -74,22 +74,26 @@ def comments_scraping(news_url, wd):
 		
 	print("[댓글 스크레이핑 시작]")
 	comments_idx = 0
-	comments_df = pd.DataFrame(columns=("Contents", "Name", "Datetime", "Recommend", "Unrecommend", "URL"))
+	#comments_df = pd.DataFrame(columns=("Contents", "Name", "Datetime", "Recommend", "Unrecommend", "URL"))
+	comments_df = pd.DataFrame(columns=("Contents", "Name", "Datetime", "Recommend", "Unrecommend"))
 	
 	comments = wd.find_elements_by_class_name('u_cbox_comment_box')
+	print('{} comments exist: '.format(len(comments)))
 	for comment in comments:
 		try:
-			name    = comment.find_element_by_class_name('u_cobx_nick').text
-			date    = comment.find_element_by_class_name('u_cobx_date').text
-			contents= comment.find_element_by_class_name('u_cbox_conents').text
-			recomm  = comment.find_element_by_class_name('u_cobx_cnt_recomm').text
-			unrecomm= comment.find_element_by_class_name('u_cobx_cnt_unrecomm').text
-			print(f"  댓글 #{comments_idx+1}:", [contents, name, date, recomm, unrecomm, news_url])
+			name    = comment.find_element_by_class_name('u_cbox_nick').text
+			date    = comment.find_element_by_class_name('u_cbox_date').text
+			contents= comment.find_element_by_class_name('u_cbox_contents').text
+			recomm  = comment.find_element_by_class_name('u_cbox_cnt_recomm').text
+			unrecomm= comment.find_element_by_class_name('u_cbox_cnt_unrecomm').text
+			#print(f"  댓글 #{comments_idx+1}:", [contents, name, date, recomm, unrecomm, news_url])
+			print(f"  댓글 #{comments_idx+1}:", [contents, name, date, recomm, unrecomm])
 			
-			comments_df.loc[comments_idx] = [contents, name, date, recomm, unrecomm, news_url]
+			#comments_df.loc[comments_idx] = [contents, name, date, recomm, unrecomm, news_url]
+			comments_df.loc[comments_idx] = [contents, name, date, recomm, unrecomm]
 			comments_idx += 1
 		except NoSuchElementException:
-			print("  ===>[삭제되거나 부적절한 댓글]")
+			print("  댓글 ===> skip [삭제되거나 부적절한 댓글]")
 			continue
 
 	return comments_df
@@ -101,7 +105,7 @@ def scraping():
 	wd.implicitly_wait(3)
 	
 	news_idx = 0
-	news_df = pd.DataFrame(columns=("Title", "Press", "DateTimie", "Article", "Good", "Warm", "Sad", "Angry", "Want", "Recommend", "URL"))
+	news_df = pd.DataFrame(columns=("Title", "Press", "DateTime", "Article", "Good", "Warm", "Sad", "Angry", "Want", "Recommend", "URL"))
 	
 	news_url = 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=001&oid=001&aid=0011993469'
 	wd.get(news_url)
@@ -119,5 +123,11 @@ def scraping():
 	
 
 news_df, comments_df = scraping()
-print("news_df: ", news_df)
-print("comments_df: ", comments_df)
+print("\n----------------------------------------------- news_df")
+print(news_df)
+print("\n----------------------------------------------- comments_df")
+print(comments_df)
+
+#print("\n\n---------------")
+#print(news_df.loc[1]["Press"])
+

@@ -74,26 +74,30 @@ def comments_scraping(news_url, wd):
 		
 	print("[댓글 스크레이핑 시작]")
 	comments_idx = 0
-	comments_df = pd.DataFrame(columns=["Contents", "Name", "Datetime", "Recomm", "Unrecomm", "URL"])
+	#comments_df = pd.DataFrame(columns=("Contents", "Name", "Datetime", "Recommend", "Unrecommend", "URL"))
+	comments_df = pd.DataFrame(columns=("Contents", "Name", "Datetime", "Recommend", "Unrecommend"))
 	
 	comments = wd.find_elements_by_class_name('u_cbox_comment_box')
+	print('{} comments exist: '.format(len(comments)))
 	for comment in comments:
 		try:
-			name 	= comment.find_element_by_class_name('u_cobx_nick').text
-			date 	= comment.find_element_by_class_name('u_cobx_date').text
-			contents= comment.find_element_by_class_name('u_cbox_conents').text
-			recomm	= comment.find_element_by_class_name('u_cobx_cnt_recomm').text
-			unrecomm= comment.find_element_by_class_name('u_cobx_cnt_unrecomm').text
-			print(f"   댓글 #{comments_idx+1}:", [contents, name, date, recomm, unrecomm, news_url])
+			name    = comment.find_element_by_class_name('u_cbox_nick').text
+			date    = comment.find_element_by_class_name('u_cbox_date').text
+			contents= comment.find_element_by_class_name('u_cbox_contents').text
+			recomm  = comment.find_element_by_class_name('u_cbox_cnt_recomm').text
+			unrecomm= comment.find_element_by_class_name('u_cbox_cnt_unrecomm').text
+			#print(f"  댓글 #{comments_idx+1}:", [contents, name, date, recomm, unrecomm, news_url])
+			print(f"  댓글 #{comments_idx+1}:", [contents, name, date, recomm, unrecomm])
 			
-			comments_df.loc[comments_idx] = [contents, name, date, recomm, unrecomm, news_url]
+			#comments_df.loc[comments_idx] = [contents, name, date, recomm, unrecomm, news_url]
+			comments_df.loc[comments_idx] = [contents, name, date, recomm, unrecomm]
 			comments_idx += 1
 		except NoSuchElementException:
-			print("   ===>[삭제되거나 부적절한 댓글]")
+			print("  댓글 ===> skip [삭제되거나 부적절한 댓글]")
 			continue
-	
+
 	return comments_df
-	
+
 
 ## scraping(): 스크래핑 함수
 def scraping(news_max=3):
@@ -104,26 +108,34 @@ def scraping(news_max=3):
 	wd.execute_script('window.open("about:blank", "_blank");')
 	tabs = wd.window_handles
 	
-	wd.switch_to.window(tags[0])
+	wd.switch_to.window(tabs[0])
 	query = input("검색어 입력: ")
 	search_url = "https://search.naver.com/search.naver?where=news&ie=utf8&sm=nws_hty&query=" + query
 	wd.get(search_url)
 	
 	
 	news_idx = 0
-	news_df = pd.DataFrame(columns=("Title", "Press", "DateTimie", "Article", "Good", "Warm", "Sad", "Angry", "Want", "Recommend", "URL"))
+	news_df = pd.DataFrame(columns=("Title", "Press", "DateTime", "Article", "Good", "Warm", "Sad", "Angry", "Want", "Recommend", "URL"))
 	comments_df = pd.DataFrame()
 	
 	while True:
-		inline_list = wd.find_elements_by_class_name('txt_inline')
+		#inline_list = wd.find_elements_by_class_name('txt_inline')
+		inline_list = wd.find_elements_by_class_name('info_group')
+		print("--------네이버 기사: %d 개------------" %(len(inline_list)))
 		for inline in inline_list:
 			try:
-				news_url = inline.find_element_by_class_name('_sp_each_url').get_attribute('href')
+				#news_url = inline.find_element_by_class_name('_sp_each_url').get_attribute('href')
+				#news_url = inline.find_element_by_class_name('a.info').get_attribute('href')
+				#sp_nws1 > div.news_wrap.api_ani_send > div > div.news_info > div > a:nth-child(3)
+				news_url = inline.find_element_by_css_selector('div > a:nth-child(3)').get_attribute('href')
+
+				print('***', news_url)
 			except:
+				print("continue")
 				continue
 			
 			# 두 번째 탭
-			wd.switch_to.window(tags[1])
+			wd.switch_to.window(tabs[1])
 			wd.get(news_url)
 			
 			news_df.loc[news_idx] = news_scraping(news_url, wd)
@@ -141,7 +153,7 @@ def scraping(news_max=3):
 				
 		# 다음 페이지 클릭
 		try:
-			wd.switch_to.window(tags[0])
+			wd.switch_to.window(tabs[0])
 			wd.find_element_by_class_name('next').click()
 			time.sleep(1)
 		except:
@@ -153,5 +165,7 @@ def scraping(news_max=3):
 	
 
 news_df, comments_df = scraping()
+print("\n----------------------------------------------- news_df")
 print(news_df)
+print("\n----------------------------------------------- comments_df")
 print(comments_df)
