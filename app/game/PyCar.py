@@ -75,6 +75,8 @@ def draw_score():
     font_30 = pygame.font.SysFont("FixedSys", 30, True, False)
     text_score = font_30.render("Score: " + str(score), True, BLACK)
     screen.blit(text_score, [15, 15])
+    text_speed = font_30.render("Speed: " + str(speed), True, BLACK)
+    screen.blit(text_speed, [150, 15])
 
 
 if __name__ == '__main__':
@@ -114,6 +116,7 @@ if __name__ == '__main__':
     score = 0
     crash = True
     game_on = True
+    speed = 4
     while game_on:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -139,9 +142,15 @@ if __name__ == '__main__':
             if not crash:
                 if event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_RIGHT:
-                        player.dx = 4
+                        player.dx = speed
                     elif event.key == pygame.K_LEFT:
-                        player.dx = -4
+                        player.dx = -speed
+                    elif event.key == pygame.K_UP:
+                        speed += 1
+                    elif event.key == pygame.K_DOWN:
+                        speed -= 1
+                        if speed <= 0:
+                            speed = 0
 
                 if event.type == pygame.KEYUP:
                     if event.key == pygame.K_RIGHT:
