@@ -1,0 +1,73 @@
+
+css-selector
+	썸네일	#img
+	시간		#overlays > ytd-thumbnail-overlay-time-status-renderer > span
+	제목		#video-title
+	조회수	#metadata-line > span:nth-child(1)
+	언제		#metadata-line > span:nth-child(2)
+	저자		#text > a
+	
+xpath
+	썸네일	//*[@id="img"]
+	시간		//*[@id="overlays"]/ytd-thumbnail-overlay-time-status-renderer/span
+	제목		//*[@id="video-title"]
+	조회수	//*[@id="metadata-line"]/span[1]
+	언제		//*[@id="metadata-line"]/span[2]
+	저자		//*[@id="text"]/a
+	
+
+
+아이템 부모
+	<div id="contents" class="style-scope ytd-item-section-renderer">
+		<ytd-video-renderer class="style-scope ytd-item-section-renderer" lockup="" prominent-thumb-style="DEFAULT" use-prominent-thumbs="" inline-title-icon="">
+		<ytd-video-renderer class="style-scope ytd-item-section-renderer" lockup="" prominent-thumb-style="DEFAULT" use-prominent-thumbs="" inline-title-icon="">
+		<ytd-video-renderer class="style-scope ytd-item-section-renderer" lockup="" prominent-thumb-style="DEFAULT" use-prominent-thumbs="" inline-title-icon="">
+		<ytd-video-renderer class="style-scope ytd-item-section-renderer" lockup="" prominent-thumb-style="DEFAULT" use-prominent-thumbs="" inline-title-icon="">
+		<ytd-video-renderer class="style-scope ytd-item-section-renderer" lockup="" prominent-thumb-style="DEFAULT" use-prominent-thumbs="" inline-title-icon="">
+		<ytd-video-renderer class="style-scope ytd-item-section-renderer" lockup="" prominent-thumb-style="DEFAULT" use-prominent-thumbs="" inline-title-icon="">
+			<div id="dismissable" class="style-scope ytd-video-renderer">
+				<ytd-thumbnail use-hovered-property="" class="style-scope ytd-video-renderer">
+					<!--css-build:shady-->
+					<a id="thumbnail" class="yt-simple-endpoint inline-block style-scope ytd-thumbnail" aria-hidden="true" tabindex="-1" rel="null" href="/watch?v=aDif68RVW4s">
+						<yt-img-shadow ftl-eligible="" class="style-scope ytd-thumbnail no-transition" style="background-color: transparent;" loaded="">
+							<!--css-build:shady-->
+[썸네일]						<img id="img" class="style-scope yt-img-shadow" alt="" width="360" src="https://i.ytimg.com/vi/aDif68RVW4s/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLBBFptdonPu7EvR0McqwxZqhItEMw">
+						</yt-img-shadow>
+
+--------------------------------- Thumbnail
+	<img 
+		id="img" 
+		class="style-scope yt-img-shadow" 
+		alt="" 
+		width="360" 
+		src="https://i.ytimg.com/vi/aDif68RVW4s/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLBBFptdonPu7EvR0McqwxZqhItEMw">
+--------------------------------- 시간
+	
+--------------------------------- title
+	<a 
+		id="video-title" 
+		class="yt-simple-endpoint style-scope ytd-video-renderer" 
+		title="🇭🇷#166 세계여행 중 여행이 더이상 즐겁지 않았던 이유 | 크로아티아_유럽일주" 
+		href="/watch?v=aDif68RVW4s" 
+		aria-label="🇭🇷#166 세계여행 중 여행이 더이상 즐겁지 않았던 이유 | 크로아티아_유럽일주 게시자: 여행가 제이 [Jay world traveler] 1개월 전 12분 7초 조회수 82,931회">
+		
+			<yt-icon id="inline-title-icon" class="style-scope ytd-video-renderer" hidden=""><!--css-build:shady--></yt-icon>
+			<yt-formatted-string class="style-scope ytd-video-renderer" aria-label="🇭🇷#166 세계여행 중 여행이 더이상 즐겁지 않았던 이유 | 크로아티아_유럽일주 게시자: 여행가 제이 [Jay world traveler] 1개월 전 12분 7초 조회수 82,931회">
+				🇭🇷#166 세계여행 중 여행이 더이상 즐겁지 않았던 이유 | 크로아티아_유럽일주
+			</yt-formatted-string>
+	</a>
+--------------------------------- 조회수
+	<span class="style-scope ytd-video-meta-block">조회수 8.2만회</span>
+--------------------------------- 언제
+	<span class="style-scope ytd-video-meta-block">1개월 전</span>
+--------------------------------- 저자 아이콘
+	<a class="style-scope ytd-video-renderer" href="/channel/UCxU8QX7IRRIW0VLuoWWoxbw" aria-label="채널로 이동">
+		<yt-img-shadow width="24" class="style-scope ytd-video-renderer no-transition" style="background-color: transparent;" loaded="">
+			<!--css-build:shady-->
+			<img id="img" class="style-scope yt-img-shadow" alt="" width="24" src="https://yt3.ggpht.com/a-/AOh14Gj6_cLTDqiuCvksGq4wTkPj-SNTVx64Ew7AcA=s68-c-k-c0x00ffffff-no-rj-mo">
+		</yt-img-shadow>
+	</a>
+--------------------------------- 저자
+	<a class="yt-simple-endpoint style-scope yt-formatted-string" spellcheck="false" href="/channel/UCxU8QX7IRRIW0VLuoWWoxbw" dir="auto">
+		여행가 제이 [Jay world traveler]
+	</a>
