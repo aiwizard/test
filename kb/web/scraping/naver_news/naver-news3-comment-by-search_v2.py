@@ -47,12 +47,12 @@ def news_scraping(news_url, wd):
 	recommend = wd.find_element_by_xpath('//*[@id="toMainContainer"]/a/em[2]').text
 	
 	#print("뉴스:", [title, press, datetime, article, good, warm, sad, angry, want, recommend, news_url])
-	
 	return [title, press, datetime, article, good, warm, sad, angry, want, recommend, news_url]
 	
 
 ## 'comments_scraping()': 뉴스 댓글 스크래핑
 def comments_scraping(news_url, wd):
+	print("[댓글 펼치기]")
 	try:
 		wd.find_element_by_class_name('u_cbox_btn_view_comment').click()
 		print("[댓글 더보기]", end="")
@@ -74,8 +74,7 @@ def comments_scraping(news_url, wd):
 		
 	print("[댓글 스크레이핑 시작]")
 	comments_idx = 0
-	#comments_df = pd.DataFrame(columns=("Contents", "Name", "Datetime", "Recommend", "Unrecommend", "URL"))
-	comments_df = pd.DataFrame(columns=("Contents", "Name", "Datetime", "Recommend", "Unrecommend"))
+	comments_df = pd.DataFrame(columns=("Contents", "Name", "Datetime", "Recommend", "Unrecommend", "URL"))
 	
 	comments = wd.find_elements_by_class_name('u_cbox_comment_box')
 	print('{} comments exist: '.format(len(comments)))
@@ -86,48 +85,104 @@ def comments_scraping(news_url, wd):
 			contents= comment.find_element_by_class_name('u_cbox_contents').text
 			recomm  = comment.find_element_by_class_name('u_cbox_cnt_recomm').text
 			unrecomm= comment.find_element_by_class_name('u_cbox_cnt_unrecomm').text
-			#print(f"  댓글 #{comments_idx+1}:", [contents, name, date, recomm, unrecomm, news_url])
-			print(f"  댓글 #{comments_idx+1}:", [contents, name, date, recomm, unrecomm])
+			print(f"  댓글 #{comments_idx+1}:", [contents, name, date, recomm, unrecomm, news_url])
 			
-			#comments_df.loc[comments_idx] = [contents, name, date, recomm, unrecomm, news_url]
-			comments_df.loc[comments_idx] = [contents, name, date, recomm, unrecomm]
+			comments_df.loc[comments_idx] = [contents, name, date, recomm, unrecomm, news_url]
 			comments_idx += 1
 		except NoSuchElementException:
 			print("  댓글 ===> skip [삭제되거나 부적절한 댓글]")
 			continue
+	
+	print("[댓글 스크레이핑 끝]")
 
 	return comments_df
 
 
 ## scraping(): 스크래핑 함수
-def scraping():
-	wd = webdriver.Chrome('chromedriver', options=chrome_options)
+def scraping(news_max=20):
+	#wd = webdriver.Chrome('chromedriver', options=chrome_options)
+	wd = webdriver.Chrome()
 	wd.implicitly_wait(3)
+	
+	# 새로운 탭
+	wd.execute_script('window.open("about:blank", "_blank");')
+	tabs = wd.window_handles
+	
+	wd.switch_to.window(tabs[0])
+	query = input("검색어 입력: ")
+	search_url = "https://search.naver.com/search.naver?where=news&ie=utf8&sm=nws_hty&query=" + query
+	wd.get(search_url)
+	
 	
 	news_idx = 0
 	news_df = pd.DataFrame(columns=("Title", "Press", "DateTime", "Article", "Good", "Warm", "Sad", "Angry", "Want", "Recommend", "URL"))
+	comments_df = pd.DataFrame()
 	
-	news_url = 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=001&oid=001&aid=0011993469'
-	wd.get(news_url)
+	while True:
+		news_list = wd.find_elements_by_css_selector('ul.list_news > li.bx > div.news_wrap.api_ani_send')
+		print("--------네이버 기사: %d 개------------" %(len(news_list)))
 
-	# Newss
-	news_df.loc[news_idx] = news_scraping(news_url, wd)
-	news_idx += 1
-	
-	# 댓글
-	comments_df = comments_scraping(news_url, wd)
-	
+		page_no = 1
+		for news in news_list:
+			#input('1네이버 뉴스 검출#########################################')
+			try:
+				press = news.find_element_by_css_selector('div.news_area div.info_group > a').text
+				#when = news.find_element_by_css_selector('div.news_area div.info_group > span.info').text
+				news_url = news.find_element_by_css_selector('div.news_area div > a:nth-child(3)').get_attribute('href')
+				title = news.find_element_by_css_selector('div.news_area > a.news_tit').get_attribute('title')
+				#print('*** {0}, {1}, {2}, {3}'.format(press, when, title, news_url))
+				print('*** {0}, {1}'.format(title, news_url))
+			except:
+				print(">>> 네이버뉴스 없음, continue")
+				continue
+			
+			if press == "스포츠동아":
+				print("### 스포츠동아, continue")
+				continue
+
+			# 두 번째 탭
+			wd.switch_to.window(tabs[1])
+			wd.get(news_url)
+
+			# 뉴스 스크레이핑
+			news_df.loc[news_idx] = news_scraping(news_url, wd)
+			news_idx += 1
+			
+			# 댓글 스크레이핑
+			df = comments_scraping(news_url, wd)
+			comments_df = pd.concat([comments_df, df])
+			
+			if news_idx >= news_max:
+				print("news_idx1: ", news_idx)
+				break
+
+			# 첫 번째 탭 (없으면 에러 발생)
+			wd.switch_to.window(tabs[0])
+			time.sleep(1)
+		
+		if news_idx >= news_max:
+			print("news_idx2: ", news_idx)
+			break
+		
+		# 다음 페이지 클릭
+		try:
+			print("[다음 페이지 cur:{}]".format(page_no))
+			page_no += 1
+			
+			wd.switch_to.window(tabs[0])
+			wd.find_element_by_class_name('btn_next').click()
+			time.sleep(1)
+		except:
+			break
+			
 	wd.close()
 	
 	return news_df, comments_df
 	
 
 news_df, comments_df = scraping()
+
 print("\n----------------------------------------------- news_df")
 print(news_df)
 print("\n----------------------------------------------- comments_df")
 print(comments_df)
-
-#print("\n\n---------------")
-#print(news_df.loc[1]["Press"])
-

@@ -1,0 +1,88 @@
+
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from selenium.common.exceptions import ElementClickInterceptedException, NoSuchElementException, ElementNotInteractableException
+
+def scroll_down(wd):
+    print("[scroll_down(): 스크롤 다운 시작]")
+    scroll_count = 0
+
+    last_height = wd.execute_script("return document.body.scrollHeight")
+    after_click = False
+
+    while True:
+        print(f"\t[스크롤 다운: {scroll_count}]", end='\n')
+        wd.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        scroll_count += 1
+        time.sleep(1)
+
+        # 스크롤 위치값 얻고 new_height 에 저장
+        new_height = wd.execute_script("return document.body.scrollHeight")
+
+        # 스크롤이 최하단이면
+        if last_height == new_height:
+            # 결과 더보기 버튼을 클릭한 적이 있는 경우
+            if after_click is True:
+                break
+            # [결과 더보기] 버튼을 클릭한 적이 없는 경우
+            else:
+                try:
+                    more_button = wd.find_element_by_xpath('//*[@id="islmp"]/div/div/div/div/div[5]/input')
+                    if more_button.is_displayed():
+                        more_button.click()
+                        after_click = True
+                except NoSuchElementException as e:
+                    print(e)
+                    break
+
+        last_height = new_height
+
+    print("[scroll_down(): 스크롤 다운 끝]\n")
+
+wd = webdriver.Chrome()
+wd.get(url)
+wd.maximize_window()
+
+scroll_down(wd)
+
+# 파싱
+source = wd.page_source
+bs = BeautifulSoup(source, 'html.parser')
+data = bs.select('a.WGvvNb')
+print('분석 대상 문장: ', len(data))
+L = list(data)
+
+wd.close()
+
+------------------------------------------------------------------------------- 브라우저 숨김
+chrome_options = webdriver.ChromeOptions()
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--no-sandbox')
+chrome_options.add_argument('--disable-dev-shm-usage')
+
+wd = webdriver.Chrome('chromedriver', options=chrome_options)
+
+
+-------------------------------------------------------------------------------
+from selenium import webdriver
+chrome_options = webdriver.ChromeOptions()
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--no-sandbox')
+chrome_options.add_argument('--disable-dev-shm-usage')
+
+from urllib.request import urlretrieve
+from urllib.error import HTTPError, URLError
+from selenium.common.exceptions import ElementClickInterceptedException, NoSuchElementException, ElementNotInteractableException
+
+
+wd = webdriver.Chrome('chromedriver', options=chrome_options)
+
+url = f"https://www.google.com/search?q={keyword}"
+wd.get(url)
+wd.maximize_window()
+
+scroll_down()
+
+
+div = self.wd.find_element_by_xpath('//*[@id="islrg"]/div[1]')
+img_list = div.find_elements_by_css_selector('div.bRMDJf.islir >img')

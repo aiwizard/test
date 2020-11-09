@@ -9,12 +9,8 @@ https://www.youtube.com/watch?v=pQ7dOg9c4NI		Selenium 구글 이미지 스크래
 	https://hanryang1125.tistory.com/5		위와 거의 비슷한 소스 설명 웹사이트
 https://www.youtube.com/watch?v=1b7pXC1-IbE		가상환경 만들어서 셀레늄으로 구글 이미지 스크레이핑
 
-
-셀레늄으로 인스타그램 크롤링하기
-	https://www.youtube.com/watch?v=wsT3C3OH_QQ
-
-파이썬 자동화 셀레늄으로 웹사이트 매크로 제작
-	https://www.youtube.com/watch?v=2EBrICPZVLY
+https://www.youtube.com/watch?v=wsT3C3OH_QQ		셀레늄으로 인스타그램 크롤링하기
+https://www.youtube.com/watch?v=2EBrICPZVLY		파이썬 자동화 셀레늄으로 웹사이트 매크로 제작
 
 웹페이지 스크롤
 	Jquery Scroll값 위치로 이동하기(window.scrollTo)

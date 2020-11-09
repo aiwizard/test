@@ -1,4 +1,10 @@
 
+제목 동일한 경우
+	다른 URL		동일 영상을 추천으로 중복 게시해서
+	같은 URL		같은 영상인데 다른 방송국이 올려서
+
+
+
 css-selector
 	썸네일	#img
 	시간		#overlays > ytd-thumbnail-overlay-time-status-renderer > span

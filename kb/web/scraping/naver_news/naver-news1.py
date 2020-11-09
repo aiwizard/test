@@ -57,11 +57,12 @@ def scraping():
 	wd.implicitly_wait(3)
 	
 	news_idx = 0
-	news_df = pd.DataFrame(columns=("Title", "Press", "DateTimie", "Article", "Good", "Warm", "Sad", "Angry", "Want", "Recommend", "URL"))
+	news_df = pd.DataFrame(columns=("Title", "Press", "DateTime", "Article", "Good", "Warm", "Sad", "Angry", "Want", "Recommend", "URL"))
 	
 	news_url = 'https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=100&oid=023&aid=0003573742'
 	wd.get(news_url)
-	
+
+	# News
 	news_df.loc[news_idx] = news_scraping(news_url, wd)
 	news_idx += 1
 	
@@ -72,5 +73,6 @@ def scraping():
 	
 
 news_df = scraping()
+print("\n----------------------------------------------- news_df")
 print(news_df)
 

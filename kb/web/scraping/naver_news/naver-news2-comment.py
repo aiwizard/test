@@ -100,65 +100,23 @@ def comments_scraping(news_url, wd):
 
 
 ## scraping(): 스크래핑 함수
-def scraping(news_max=3):
+def scraping():
 	wd = webdriver.Chrome('chromedriver', options=chrome_options)
 	wd.implicitly_wait(3)
 	
-	# 새로운 탭
-	wd.execute_script('window.open("about:blank", "_blank");')
-	tabs = wd.window_handles
-	
-	wd.switch_to.window(tabs[0])
-	query = input("검색어 입력: ")
-	search_url = "https://search.naver.com/search.naver?where=news&ie=utf8&sm=nws_hty&query=" + query
-	wd.get(search_url)
-	
-	
 	news_idx = 0
 	news_df = pd.DataFrame(columns=("Title", "Press", "DateTime", "Article", "Good", "Warm", "Sad", "Angry", "Want", "Recommend", "URL"))
-	comments_df = pd.DataFrame()
 	
-	while True:
-		#inline_list = wd.find_elements_by_class_name('txt_inline')
-		inline_list = wd.find_elements_by_class_name('info_group')
-		print("--------네이버 기사: %d 개------------" %(len(inline_list)))
-		for inline in inline_list:
-			try:
-				#news_url = inline.find_element_by_class_name('_sp_each_url').get_attribute('href')
-				#news_url = inline.find_element_by_class_name('a.info').get_attribute('href')
-				#sp_nws1 > div.news_wrap.api_ani_send > div > div.news_info > div > a:nth-child(3)
-				news_url = inline.find_element_by_css_selector('div > a:nth-child(3)').get_attribute('href')
+	news_url = 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=001&oid=001&aid=0011993469'
+	wd.get(news_url)
 
-				print('***', news_url)
-			except:
-				print("continue")
-				continue
-			
-			# 두 번째 탭
-			wd.switch_to.window(tabs[1])
-			wd.get(news_url)
-			
-			news_df.loc[news_idx] = news_scraping(news_url, wd)
-			news_idx += 1
-			
-			# 댓글
-			df = comments_scraping(news_url, wd)
-			comments_df = pd.concat([comments_df, df])
-			
-			if news_idx >= news_max:
-				break
-		
-		if news_idx >= news_max:
-			break
-				
-		# 다음 페이지 클릭
-		try:
-			wd.switch_to.window(tabs[0])
-			wd.find_element_by_class_name('next').click()
-			time.sleep(1)
-		except:
-			break
-			
+	# News
+	news_df.loc[news_idx] = news_scraping(news_url, wd)
+	news_idx += 1
+	
+	# 댓글
+	comments_df = comments_scraping(news_url, wd)
+	
 	wd.close()
 	
 	return news_df, comments_df
@@ -169,3 +127,7 @@ print("\n----------------------------------------------- news_df")
 print(news_df)
 print("\n----------------------------------------------- comments_df")
 print(comments_df)
+
+#print("\n\n---------------")
+#print(news_df.loc[1]["Press"])
+
