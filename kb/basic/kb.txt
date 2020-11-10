@@ -1,4 +1,8 @@
-enumerate and formatted stirng
+파이썬 10. filter, map, reduce
+	https://daeguowl.tistory.com/77
+
+
+Enumerate and Formatted stirng
 	t = [1, 5, 7, 33, 39, 52]
 	for i, v in enumerate(t):
 		print("index : {}, value: {}".format(i, v))
@@ -9,12 +13,6 @@ enumerate and formatted stirng
 	for i, v in enumerate(t):
 		print("index : %d, value: %d" %(i, v))
 
-
-https://hybae430.tistory.com/16
-	exception	예외 처리
-	raise		예외 발생시키기
-	assert		상태를 검증하는데 사용되며 검증식이 거짓일 경우 항상 AssertionError가 발생
-
 기본 자료형
 	()	튜플		# 특징: 변경불가
 	[]	리스트
@@ -23,6 +21,12 @@ https://hybae430.tistory.com/16
 파이썬 출력문장 색상
 	https://info-lab.tistory.com/230?category=204989
 	http://parkjuwan.dothome.co.kr/wordpress/2017/06/24/text-color-py/
+
+	
+https://hybae430.tistory.com/16
+	exception	예외 처리
+	raise		예외 발생시키기
+	assert		상태를 검증하는데 사용되며 검증식이 거짓일 경우 항상 AssertionError가 발생
 
 exception
 	Exceptoin
@@ -43,8 +47,8 @@ exception
     except ValueError as error:
         print('value error')
         return
-    except Exception:
-        print("error occurred")
+    except Exception as e:
+        print("error occurred: ", e)
         return
     else:
         print('예외 없을 시')

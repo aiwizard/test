@@ -99,9 +99,9 @@ def comments_scraping(news_url, wd):
 
 
 ## scraping(): 스크래핑 함수
-def scraping(news_max=10):
-    #wd = webdriver.Chrome('chromedriver', options=chrome_options)
-    wd = webdriver.Chrome()
+def scraping(news_max=50):
+    wd = webdriver.Chrome('chromedriver', options=chrome_options)
+    #wd = webdriver.Chrome()
     wd.implicitly_wait(3)
 
     # 새로운 탭
@@ -124,9 +124,16 @@ def scraping(news_max=10):
 
         page_no = 1
         for news in news_list:
+            # try:
+            #     class_val = news.find_element_by_css_selector('html > body').get_attribute('class')
+            # except:
+            #     #if( class_val != 'chrome'):
+            #     print(">>> 네이버뉴스 but 파싱 구조 다름")
+            #     continue
+
             #input('1네이버 뉴스 검출#########################################')
             try:
-                #press = news.find_element_by_css_selector('div.news_area div.info_group > a').text
+                press = news.find_element_by_css_selector('div.news_area div.info_group > a').text
                 #when = news.find_element_by_css_selector('div.news_area div.info_group > span.info').text
                 news_url = news.find_element_by_css_selector('div.news_area div > a:nth-child(3)').get_attribute('href')
                 title = news.find_element_by_css_selector('div.news_area > a.news_tit').get_attribute('title')
@@ -136,6 +143,10 @@ def scraping(news_max=10):
                 print(">>> 네이버뉴스 없음, continue")
                 continue
             
+            if press == "스포츠동아":
+                print("### 스포츠동아, continue")
+                continue
+
             # 두 번째 탭
             wd.switch_to.window(tabs[1])
             wd.get(news_url)
