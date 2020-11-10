@@ -27,24 +27,28 @@ chrome_options.add_argument('--disable-dev-shm-usage')
 
 ## news_scraping(): 뉴스 스크래핑 함수
 def news_scraping(news_url, wd):
-    press = wd.find_element_by_xpath('//*[@id="main_content"]/div[1]/div[1]/a/img').get_attribute('title')
-    title = wd.find_element_by_id('articleTitle').text
-    datetime = wd.find_element_by_class_name('t11').text
-    article = wd.find_element_by_id('articleBodyContents').text
+    try:
+        press = wd.find_element_by_xpath('//*[@id="main_content"]/div[1]/div[1]/a/img').get_attribute('title')
+        title = wd.find_element_by_id('articleTitle').text
+        datetime = wd.find_element_by_class_name('t11').text
+        article = wd.find_element_by_id('articleBodyContents').text
 
-    # 불필요 부분 제거
-    article = article.replace("// flash 오류를 우회하기 위한 함수 추가", "")
-    article = article.replace("function _flash_removeCallback(){}", "")
-    article = article.replace("\n", "")
-    article = article.replace("\t", "")
+        # 불필요 부분 제거
+        article = article.replace("// flash 오류를 우회하기 위한 함수 추가", "")
+        article = article.replace("function _flash_removeCallback(){}", "")
+        article = article.replace("\n", "")
+        article = article.replace("\t", "")
 
-    # 좋아요 등
-    good = wd.find_element_by_xpath('//*[@id="spiLayer"]/div[1]/ul/li[1]/a/span[2]').text
-    warm = wd.find_element_by_xpath('//*[@id="spiLayer"]/div[1]/ul/li[2]/a/span[2]').text
-    sad  = wd.find_element_by_xpath('//*[@id="spiLayer"]/div[1]/ul/li[3]/a/span[2]').text
-    angry= wd.find_element_by_xpath('//*[@id="spiLayer"]/div[1]/ul/li[4]/a/span[2]').text
-    want = wd.find_element_by_xpath('//*[@id="spiLayer"]/div[1]/ul/li[5]/a/span[2]').text
-    recommend = wd.find_element_by_xpath('//*[@id="toMainContainer"]/a/em[2]').text
+        # 좋아요 등
+        good = wd.find_element_by_xpath('//*[@id="spiLayer"]/div[1]/ul/li[1]/a/span[2]').text
+        warm = wd.find_element_by_xpath('//*[@id="spiLayer"]/div[1]/ul/li[2]/a/span[2]').text
+        sad  = wd.find_element_by_xpath('//*[@id="spiLayer"]/div[1]/ul/li[3]/a/span[2]').text
+        angry= wd.find_element_by_xpath('//*[@id="spiLayer"]/div[1]/ul/li[4]/a/span[2]').text
+        want = wd.find_element_by_xpath('//*[@id="spiLayer"]/div[1]/ul/li[5]/a/span[2]').text
+        recommend = wd.find_element_by_xpath('//*[@id="toMainContainer"]/a/em[2]').text
+    except:
+        print("error")
+        return ["","","","","","","","","","",""]
 
     #print("뉴스:", [title, press, datetime, article, good, warm, sad, angry, want, recommend, news_url])
     return [title, press, datetime, article, good, warm, sad, angry, want, recommend, news_url]
@@ -56,12 +60,12 @@ def comments_scraping(news_url, wd):
     try:
         wd.find_element_by_class_name('u_cbox_btn_view_comment').click()
         print("[댓글 더보기]", end="")
-        time.sleep(1)
+        time.sleep(0.5)
 
         while True:
             wd.find_element_by_class_name('u_cbox_btn_more').click()
             print("[더보기]", end="")
-            time.sleep(1)
+            time.sleep(0.5)
     except:
         pass
 
@@ -70,7 +74,7 @@ def comments_scraping(news_url, wd):
     for btn_reply in btn_reply_list:
         btn_reply.send_keys('\n')
         print("[답글]", end="")
-        time.sleep(1)
+        time.sleep(0.5)
         
     print("[댓글 스크레이핑 시작]")
     comments_idx = 0
@@ -99,9 +103,9 @@ def comments_scraping(news_url, wd):
 
 
 ## scraping(): 스크래핑 함수
-def scraping(news_max=10):
-    #wd = webdriver.Chrome('chromedriver', options=chrome_options)
-    wd = webdriver.Chrome()
+def scraping(news_max=100):
+    wd = webdriver.Chrome('chromedriver', options=chrome_options)
+    #wd = webdriver.Chrome()
     wd.implicitly_wait(3)
 
     # 새로운 탭
@@ -124,9 +128,8 @@ def scraping(news_max=10):
 
         page_no = 1
         for news in news_list:
-            #input('1네이버 뉴스 검출#########################################')
             try:
-                #press = news.find_element_by_css_selector('div.news_area div.info_group > a').text
+                press = news.find_element_by_css_selector('div.news_area div.info_group > a').text
                 #when = news.find_element_by_css_selector('div.news_area div.info_group > span.info').text
                 news_url = news.find_element_by_css_selector('div.news_area div > a:nth-child(3)').get_attribute('href')
                 title = news.find_element_by_css_selector('div.news_area > a.news_tit').get_attribute('title')
@@ -136,12 +139,21 @@ def scraping(news_max=10):
                 print(">>> 네이버뉴스 없음, continue")
                 continue
             
+            # if press == "스포츠동아":
+            #     print("### 스포츠동아, continue")
+            #     continue
+
             # 두 번째 탭
             wd.switch_to.window(tabs[1])
             wd.get(news_url)
 
             # 뉴스 스크레이핑
-            news_df.loc[news_idx] = news_scraping(news_url, wd)
+            info_list = news_scraping(news_url, wd)
+            if(len(info_list[0])==0 and len(info_list[1])==0 and len(info_list[2])==0 and len(info_list[3])==0):
+                print(">>> 네이버뉴스 맞음, 구조 다름, continue")
+                continue
+
+            news_df.loc[news_idx] = info_list
             news_idx += 1
             
             # 댓글 스크레이핑
@@ -154,7 +166,7 @@ def scraping(news_max=10):
 
             # 첫 번째 탭 (없으면 에러 발생)
             wd.switch_to.window(tabs[0])
-            time.sleep(1)
+            time.sleep(0.5)
         
         if news_idx >= news_max:
             print("news_idx2: ", news_idx)

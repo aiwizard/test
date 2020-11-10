@@ -1,12 +1,12 @@
-$ python3 naver-news3-comment-by-search_v2.py 
+(base) munhwan@munhwan-VGN-Z56LG-R:~/___mywork/test/kb/web/scraping/naver_news$ python3 naver-news3-comment-by-search_v5-major2.py 
 검색어 입력: 토픽 모델링
 --------네이버 기사: 10 개------------
-*** 변덕꾸러기 토픽모델링 어떻게 다뤄야 하나, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=110&oid=028&aid=0002465829
+*** 1, 변덕꾸러기 토픽모델링 어떻게 다뤄야 하나, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=110&oid=028&aid=0002465829
 [댓글 펼치기]
 [댓글 스크레이핑 시작]
 0 comments exist: 
 [댓글 스크레이핑 끝]
-*** 지난 29년 동성애 관련 기사의 가장 큰 토픽은 ‘사랑’, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=110&oid=028&aid=0002461922
+*** 2, 지난 29년 동성애 관련 기사의 가장 큰 토픽은 ‘사랑’, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=110&oid=028&aid=0002461922
 [댓글 펼치기]
 [댓글 더보기][답글][답글][답글][답글][댓글 스크레이핑 시작]
 9 comments exist: 
@@ -22,8 +22,119 @@ $ python3 naver-news3-comment-by-search_v2.py
 [댓글 스크레이핑 끝]
 >>> 네이버뉴스 없음, continue
 >>> 네이버뉴스 없음, continue
->>> 네이버뉴스 없음, continue
-*** ‘에이즈’에서 ‘인권’으로…기계학습이 드러낸 극적 변화, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=110&oid=028&aid=0002463550
+*** 3, 거짓 자소서, AI 입학사정관이 잡아낸다, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244
+[댓글 펼치기]
+[댓글 더보기][더보기][더보기][더보기][더보기][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][댓글 스크레이핑 시작]
+107 comments exist: 
+  댓글 #1: ['예를 들어 A학생이 1번 항목에서 “친구들과 어울리기를 즐긴다”고 했는데 3번 항목에서는 “사람을 잘 못 사귀는 게 단점”이라고 한다면 논리적으로 상충하는 부분을 표시해 준다. <<< 잉??? 기존에 원래 친하게 지내는 사람들과는 잘 어울리고 그것을 즐기지만 새로운 사람과는 쉽게 못 사귄다는 의미로도 될 수 있는데 이게 그냥 막연하게 논리적으로 안 맞다니? 처음에는 낯을 많이 가리지만 친해지면 잘 어울리는 사람들이 얼마나 많은데. 맥락적 의미 + 질적인 수준까지 고려를 해야 하는데 그냥 표면적인 규격화로 필터링하는게 거짓탐지 라니', 'dirq****', '2018.12.23. 19:46', '258', '2', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 #2: ['결국 내신을 볼 수밖에 없는 구조임... 학종의 본질에 위배되는 거지.', 'wsme****', '2018.12.24. 02:36', '1', '1', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 #3: ['이런 말도 않되는 여과로 대학의 당락을 결정하다니 에이아이에 맞게 자소서쓰는 회사가 생기고 성업하겠네오.. 그냥 수시를 없애면 되지 이게 뭐하는짓인가 ㅜㅜ', 'dlwj****', '2018.12.24. 07:50', '4', '1', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #4: ['자소서를 없애는게 답인듯..', 'kes1****', '2018.12.23. 19:40', '205', '3', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #5: ['지랄들한다 1명도 못 빠져나가게 잡아낼수있다고 자신할수있냐? 애초에 수시제도가 있는 놈들 자식들 해먹으라고 만들어논 개구멍인것을..뚫려있는 개구멍은 막는게 맞니 거기서 개들못지나게 잘지킨다고 하는게 맞니?', 'sfle****', '2018.12.23. 19:14', '198', '6', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #6: ['스카이캐슬 드라마보다 현실이 더 추잡하고 더러움 학종수시 전면 폐지해야 함', 'jasm****', '2018.12.23. 20:12', '9', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #7: ['대입 학종수시 / 대졸 후 로스쿨면접 / 노무현 싸지른 똥, 거기다 문재인과 그들의 고집까지 더해 지긋지긋 역겹다 못해 이젠 시궁창 썪은내가 온나라에 진동한다. 그만 좀 하자 이젠 학종수시로스쿨폐지 해라 더러운 민주당새끼들아 뒷구녕파티 뒤로호박씨까기 그만해라', 'hkrt****', '2018.12.23. 23:42', '3', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #8: ['팩트: 문재인도 기득권이고 그들 편만 챙겨줌. 수시 확대한다고 대선토론때도 대놓고 얘기했는데 개 도야지들이 뽑음 ㅋㅋㅋ', 'blue****', '2018.12.24. 07:41', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #9: ['이러다 자소서도 AI가 돈 더 받고 써주겠네.뛰는 대학위에 나는 입시턴설턴트학원. .그걸 지켜보는 교육부', 'mavi****', '2018.12.23. 19:43', '121', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #10: ['수시를 없애라니까 별 gr를 다 하네.', 'good****', '2018.12.23. 20:35', '92', '6', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 #11: ['불합을 온전히 자소서 탓만 할 순 없지 않나요? 자소서보다는 아무래도 생기부가 더 중요한데 학생들보다 전공 적합성이 떨어진다거나 이런 문제가 있었을 수 있죠. 저도 내신 1.24에 자소서 제가 썼지만 서연고 1차 뚫고 고연 붙었습니다', 'jiwo****', '2018.12.24. 11:14', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #12: ['자기소개서는 왜 쓰라하는거야 고등학교3학년이 뭘쓸게 그리 많겟냐 쓸대없는짖 하는거지 ~~ 그냥 면접때 자기소개서나 듣고 말아라 애들 머리아프다 ~~공부하기도 힘들어 죽겟는댕 ~~별걸다하래', 'myon****', '2018.12.23. 21:29', '28', '1', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #13: ['자소서 내기 전에 AI 돌리러 학원 상담 가는게 또 필수 코스가 될걸...', 'inth****', '2018.12.23. 20:49', '25', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 #14: ['매해마다 수시전형료로 대학들이 벌어들이는 돈만해도 어마어마하다 들었습니다...부패교사뿐아니라 공정성을 잃고 수시전형으로 돈벌려는 대학들도 수시를 고집하는 대학들의 양심없는 꼼수라 들었습니다. 제발 교사빽 교수빽 돈으로 조작되는 내신 수행평가 학종으로 썩어빠진 수시를 철폐하라!!!!! 대한민국학부모 주머니 탈탈 털어가는 도둑전형!!!!금수저전형!!!! 수시를 철폐하라!!!!!철폐하라!!!!!', 'maud****', '2018.12.24. 00:57', '19', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #15: ['비리온상, 비리유발 수시폐지가 우선입니다.더이상 엉뚱한 거 하지 말고 당장 정시 최소한 50%이상은 해 주세요. 제발 학부모, 학생들 눈에 피눈물 흘리게 하지 말고.....', 'sohn****', '2018.12.23. 20:55', '20', '2', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #16: ['그냥 정시 100 으로 하면 되는데.. 수시가 참 여러 사람 힘들게 한다 ㅠㅠ 정치인들이야말로 AI 로 바꿔야 한다', 'blue****', '2018.12.23. 23:13', '15', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 #17: ['도대체 누구를 위한 입학사정관제인지ㅜㅜ금수저 되물림 정도가 아니라 뻥튀기하려고 만든 제도 위로 올라가는 사다리 다 불태운 그들만의 잔치', 'josh****', '2018.12.23. 20:33', '13', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #18: ['수시 폐지해주세요!', 'wjfw****', '2018.12.24. 00:18', '11', '1', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #19: ['자소서 없애는게 답입니다 무슨 자소서를 요구하나요 뻔한 자소서죠 그러니 수백만원 주고 대필하거나 강의 듣고 씁니다 자소서 수강학원만 먹여살리는 제도지요 어서 없애야 합니다', 'hhy9****', '2018.12.23. 22:35', '10', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #20: ['제발 편법천지인 수시없애고 정시로 기자~~', 'keh1****', '2018.12.23. 21:37', '8', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 #21: ['애초에 누가 자소서를 쓰나 소설을 쓰지', 'eotl****', '2018.12.23. 21:16', '6', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #22: ['애쓴다 애써...안하면 될걸 ㅆㄹㄱ제도 살리려고 별짓을 다하네. 대체 이유가 뭔지 정말 궁금하다', 'annh****', '2018.12.23. 22:13', '6', '1', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #23: ['그냥 편하게 정시로 뽑으면 안되겠니?', 'bory****', '2018.12.24. 00:16', '5', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #24: ['선생이 쓴 추천서에 유독 사용 단어가 다르면 문제라...ㅎ 선생님들도 힘들겠어요. 감정없이 유독 진짜 기특한 친구가 있어도 감정 꾹꾹 눌러가며 똑같이 써야겠네요.', 'gogo****', '2018.12.23. 21:48', '5', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #25: ['그냥 정시100%해라', 'ling****', '2018.12.23. 20:46', '5', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 #26: ['수시를 노무현이만들었건 박근혜가 만들었건 정치색은 전혀 중요하지않아요..내신 수행평가 학종모두 교사손에서 거래조작유출되고 스카이캐쓸에서도 보셨겠지만 수억들여서 코칭하고 컨설팅 억대로 돈써서 학종만들어 대학보냅니다...제발 교사빽 교수빽 돈없이도 그어떤세력의 개입없이도 공정하게 입시치르는 평가원주관 수능정시100퍼센트로 입시 바로세워주세요. 유은혜와 문재인정부는 지금이라도 늦지않았으니 서둘러 부패척결의 의지를 보여주길 !!!!대한민국서 애낳고사는 학부모들은 열망합니다.!!!!!', 'maud****', '2018.12.24. 00:50', '5', '1', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #27: ['담당자가 자소서 읽긴 읽냐? AI에 맞길거 같으면 입학자체를 AI에게 믿기는데 가장 합리적이다.', 'nf30****', '2018.12.24. 03:22', '4', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 #28: ['자소서 없애라.정말 소설이다.', 'eunj****', '2018.12.24. 01:15', '4', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #29: ['지랄염병 떨지말고 학종 없애라. 선발기준 차체가 모호한데 AI고 지랄이고 다 말장난이다.', 'picv****', '2018.12.23. 22:26', '4', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 #30: ['정말정답임!! 핵추천!!', 'gusd****', '2018.12.24. 06:42', '1', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #31: ['누가 누굴 잡아내냐...차라리 학부모,학생들이 수시 비리 찾아내는게 더 빠르겠다. 숙명여고도 학생,학부모 아니었음 끝내 묻히고 말았을 전형적인 수시비리 였지.', '1syk****', '2018.12.24. 02:03', '3', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #32: ['기사 제목 틀렸어요 자소서라뇨 자소설인데', 'po01****', '2018.12.23. 21:59', '3', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #33: ['실이 많을까 득이 많을까... 흠', 'kjyz****', '2018.12.23. 19:20', '3', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #34: ['지랄말고 그냥 수시를 없애라. 국민이 그렇게 싫다는데 이 정부는 도대체 무슨 똥고집인지. 정말 잘하는게 하나도 없는 정부', 'nbes****', '2018.12.23. 22:09', '3', '1', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #35: ['OOO.뭐 애들 들어갈 숨틀 구멍을 안 만들고,자꾸 사람 할일을 기계다 시킨다냣.교수도 ai로 바꾸고,대학들도 직접 다니는데 말고,컴퓨터로 수강듣고,출첵하게 해라', 'bris****', '2018.12.23. 20:20', '3', '1', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #36: ['자소서를 없애라 습새들아;;; 언제까지 내가 어쩌고 저쩌고를 써야하냐 이런 악순환을 끊고싶다', 'hali****', '2018.12.24. 06:48', '2', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #37: ['벌써 자소서가얼마나거짓이 많은지 다 안다는얘긴데 뭐때문에 수시학종전형을 유지할려는건지...', 'mhle****', '2018.12.24. 02:46', '2', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #38: ['창의적 인재를 Ai 가 뽑는다고?', 'para****', '2018.12.24. 01:51', '2', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #39: ['자소서 없애고 인공지능으로 면접보자', 'dkwj****', '2018.12.24. 00:50', '2', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 #40: ['학원대필한 학생 고대뿐아니라 서울대도 간걸ㆍㆍ그것도 학교장 추천으로ㆍㆍㆍ', '0lmj****', '2018.12.24. 02:27', '1', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #41: ['어떻게든 수시축소를 안하려고 애를 쓰는게 대단한거 아님? 내가 돈줄테니 다큐 하나 만들어서 그 이유좀 조목조목 따져서 수시축소 안하는 이유좀 속시원하게 파헤쳐줘라 제발ㅠㅠ 정시확대 안하는 이유가 아니라 수시축소를 안하는 이유 제발ㅠㅠ', 'chem****', '2018.12.24. 02:22', '1', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #42: ['내신비리 조장하는 수시폐지 마땅하다!!!', 'happ****', '2018.12.24. 01:27', '1', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 #43: ['애들 인생이 달린 일인데~마루타냐?', 'json****', '2018.12.24. 00:34', '1', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #44: ['ㅋㅋㅋ 자소서를 ai가 써주는 시대가 올수도', 'jhs9****', '2018.12.23. 22:51', '1', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #45: ['지랄을 한다...혁신학교 실력없는 애들이 좋은대학가려면 학종밖에 없고 학종은 학원에서 써주는것이고...애들이 뭘할줄알까? 백두 칭송위원회 같은거나 만들며 인생을 소비하겠지...', 'glen****', '2018.12.23. 22:39', '1', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 #46: ['그나마 공정경쟁이 되는 대입마저 망가뜨리는 정부 ㅠㅠㅠㅜㅜㅜ 지방에서 수능보다 학부모끌어들여서 활동하는게 더 대학가기 쉽다면서요', 'punc****', '2018.12.24. 22:05', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 #47: ['자소서를 컨설팅 맡기고 대필맡기는게 왜 그러는지 알고는 있을까...', 'hand****', '2018.12.24. 07:58', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #48: ['교수들은 자기일 줄어드니 좋다고 했겠지만 도대체 컴퓨터에 맡길일을 왜 하는건지?!?!', 'jksa****', '2018.12.24. 07:56', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 #49: ['어느 선생님의 성적표 오타표기로 버그걸릴 인공지능입니다.', 'cdhm****', '2018.12.24. 06:05', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #50: ['ㅋㅋㄲㅋㅋㄲㅋㅋㄲ', 'kjur****', '2018.12.24. 04:18', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 #51: ['앞으로의 자소서는 성적이나 입상, 오래동안 전문화된 내용으로 관리된 블로그 등등.. 팩트를 기반으로 해서 요약해주는 방향으로 가야한다. AI는 주둥이로만 세계를 창조한 자소설만 걸러주면 된다.', 'wwge****', '2018.12.24. 03:29', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #52: ['입시학원 차리세요~~아님 이민을 가야죠~~이게 우리나라 현실..ㅠㅠ', 'sea8****', '2018.12.24. 03:06', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #53: ['너네도좀 보자..자소서 학원은 너무함ㅜ 자기인생인데 .뽑히는것도 참', 'psh3****', '2018.12.24. 02:45', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 #54: ['정시늘리세요. al은무슨', 'naha****', '2018.12.24. 01:38', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #55: ['IA도 못잡아 냅니다 에 한표', 'sski****', '2018.12.24. 01:34', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #56: ['어이 총장 등시나 할일 그렇게 읍냐? 차라리 국영수 본고사나 하자고 데모라도 해봐라 장사꾼놈이 교육자 행세하지말고 드러븐세끼ㅉㅉ', 'true****', '2018.12.24. 01:34', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #57: ['자소서시험처럼대학에와서두시간동안직접작성하게하라', 'ceo6****', '2018.12.24. 01:13', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #58: ['수시없애자는 사람들은 다강남사냐 현 일반고고등학생들한테 물어봐라 수시폐지가 답인지 90퍼센트의 학생들이 아니라고 답할거다', 'rjsa****', '2018.12.24. 01:09', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 #59: ['아..별..ㅋㅋ고대야 입학사정관을 계약직말고 정규로 돌리는게 낫겠다 ㅋㅋ', 'qlal****', '2018.12.24. 00:10', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 #60: ['저러면 우리 개돼지들이 또 넘어갈까봐 저러네...', 'banj****', '2018.12.23. 21:25', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #61: ['야 그러다가 대필 안받고 학생이 손 수 한땀한땀 써서 낸 자소서 걸러지면 어떻게 책임ㅈ.. 지 않아도 되겠구나...;; 어짜피 될놈될 안될놈안될이니까;;', '356c****', '2018.12.23. 20:57', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 #62: ['웃긴다 그런거잡지말고 비리로들어가는거나잡아라', 'kiln****', '2018.12.23. 20:23', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #63: ['자소서라함은..... 저는 어려서 부유하진 않지만 화목한 가정에서 자라나습니다........ 공부보다는 예의와 인성을 가르쳐주신 덕분에 많은곳에서 봉사하며 주저리주저리........', 'horn****', '2018.12.24. 06:40', '0', '1', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+  댓글 #64: ['잡아도 묵인할거면서 ㅉㅉㅉ', 'kjk0****', '2018.12.23. 20:51', '0', '1', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=011&aid=0003471244']
+[댓글 스크레이핑 끝]
+*** 4, ‘에이즈’에서 ‘인권’으로…기계학습이 드러낸 극적 변화, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=110&oid=028&aid=0002463550
 [댓글 펼치기]
 [댓글 더보기][답글][답글][답글][댓글 스크레이핑 시작]
 3 comments exist: 
@@ -33,8 +144,12 @@ $ python3 naver-news3-comment-by-search_v2.py
 [댓글 스크레이핑 끝]
 >>> 네이버뉴스 없음, continue
 >>> 네이버뉴스 없음, continue
->>> 네이버뉴스 없음, continue
-*** 쓰레기+네이버+하태경 젠더 갈등의 은밀한 카르텔?, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=036&aid=0000041252
+*** 5, [데이터로 본 한국인] 코로나19 초기부터 쏟아진 기사, 확산 방지에 도움 됐나, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=110&oid=469&aid=0000472057
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 6, 쓰레기+네이버+하태경 젠더 갈등의 은밀한 카르텔?, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=036&aid=0000041252
 [댓글 펼치기]
 [댓글 더보기][더보기][더보기][더보기][더보기][더보기][더보기][더보기][더보기][더보기][더보기][더보기][더보기][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][답글][댓글 스크레이핑 시작]
 452 comments exist: 
@@ -493,155 +608,662 @@ $ python3 naver-news3-comment-by-search_v2.py
 [댓글 스크레이핑 끝]
 [다음 페이지 cur:1]
 --------네이버 기사: 10 개------------
-*** ‘나’ 1000회, ‘부조리’ 166회, ‘노력’ 38회…청년의 꿈 외친 BTS, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=106&oid=382&aid=0000744164
-### 스포츠동아, continue
+*** 7, ‘나’ 1000회, ‘부조리’ 166회, ‘노력’ 38회…청년의 꿈 외친 BTS, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=106&oid=382&aid=0000744164
+error
+>>> 네이버뉴스 맞음, 구조 다름, continue
 >>> 네이버뉴스 없음, continue
 >>> 네이버뉴스 없음, continue
 >>> 네이버뉴스 없음, continue
 >>> 네이버뉴스 없음, continue
 >>> 네이버뉴스 없음, continue
-*** 공주대 김태종 박사, 뉴스 빅데이터 연구로 KCI 등재학술지 게재, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=008&aid=0004418063
-[댓글 펼치기]
-[댓글 스크레이핑 시작]
-0 comments exist: 
-[댓글 스크레이핑 끝]
 >>> 네이버뉴스 없음, continue
-*** 농협, 핀테크 기업과 NH핀테크 오픈플랫폼 모델링 협약, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=123&aid=0002113978
-[댓글 펼치기]
-[댓글 스크레이핑 시작]
-0 comments exist: 
-[댓글 스크레이핑 끝]
 >>> 네이버뉴스 없음, continue
-[다음 페이지 cur:1]
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+[다음 페이지 cur:2]
 --------네이버 기사: 10 개------------
-*** 20대 국회 지역뉴스로 본 정책 핵심 열쇳말은 미세먼지·교육·아파트, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=100&oid=028&aid=0002488164
+>>> 네이버뉴스 없음, continue
+*** 8, 농협, 핀테크 기업과 NH핀테크 오픈플랫폼 모델링 협약, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=123&aid=0002113978
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 9, 서울 이산화탄소 파수꾼 자처한 과학자, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=110&oid=053&aid=0000027237
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 10, [토픽]해외게임통신 234호, "신작 '콜 오브 듀티' 잔혹한 묘사로 러시아 판매 중지", https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=236&aid=0000196309
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 11, [토픽]해외게임통신 220호, 유비소프트 '유플레이 플러스' 라인업 발표, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=236&aid=0000192421
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 12, [토픽]해외게임통신 215호, 신작 '젤다의 전설'에 사용된 음악의 정체는?, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=236&aid=0000190678
 [댓글 펼치기]
 [댓글 스크레이핑 시작]
 0 comments exist: 
 [댓글 스크레이핑 끝]
 >>> 네이버뉴스 없음, continue
-*** 서울 이산화탄소 파수꾼 자처한 과학자, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=110&oid=053&aid=0000027237
-[댓글 펼치기]
-[댓글 스크레이핑 시작]
-0 comments exist: 
-[댓글 스크레이핑 끝]
-*** [토픽]해외게임통신 234호, "신작 '콜 오브 듀티' 잔혹한 묘사로 러시아 판매 중지", https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=236&aid=0000196309
-[댓글 펼치기]
-[댓글 스크레이핑 시작]
-0 comments exist: 
-[댓글 스크레이핑 끝]
-*** [토픽]해외게임통신 220호, 유비소프트 '유플레이 플러스' 라인업 발표, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=236&aid=0000192421
-[댓글 펼치기]
-[댓글 스크레이핑 시작]
-0 comments exist: 
-[댓글 스크레이핑 끝]
-*** [토픽]해외게임통신 215호, 신작 '젤다의 전설'에 사용된 음악의 정체는?, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=236&aid=0000190678
-[댓글 펼치기]
-[댓글 스크레이핑 시작]
-0 comments exist: 
-[댓글 스크레이핑 끝]
->>> 네이버뉴스 없음, continue
-*** "예방 저널리즘 부족한 언론, '위기 극복' 시민들 주목해야", https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=047&aid=0002284802
+*** 13, "예방 저널리즘 부족한 언론, '위기 극복' 시민들 주목해야", https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=047&aid=0002284802
 [댓글 펼치기]
 [댓글 스크레이핑 시작]
 0 comments exist: 
 [댓글 스크레이핑 끝]
 >>> 네이버뉴스 없음, continue
 >>> 네이버뉴스 없음, continue
-[다음 페이지 cur:1]
+[다음 페이지 cur:3]
 --------네이버 기사: 10 개------------
-*** [토픽]해외게임통신 207호, 노트르담 성당 복구 위해 '어쌔신크리드 유니티' 무료 배포, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=236&aid=0000188052
+>>> 네이버뉴스 없음, continue
+*** 14, "자살자 휴대전화 분석해 원인 파악 가능…예방에도 기여", https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=001&aid=0009086831
 [댓글 펼치기]
 [댓글 스크레이핑 시작]
 0 comments exist: 
 [댓글 스크레이핑 끝]
-*** "자살자 휴대전화 분석해 원인 파악 가능…예방에도 기여", https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=001&aid=0009086831
-[댓글 펼치기]
-[댓글 스크레이핑 시작]
-0 comments exist: 
-[댓글 스크레이핑 끝]
->>> 네이버뉴스 없음, continue
->>> 네이버뉴스 없음, continue
-*** [토픽]해외게임통신 185호, '레드 데드 리뎀션 2 온라인'은 11월 말 예정, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=236&aid=0000180588
+*** 15, [토픽]해외게임통신 207호, 노트르담 성당 복구 위해 '어쌔신크리드 유니티' 무료 배포, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=236&aid=0000188052
 [댓글 펼치기]
 [댓글 스크레이핑 시작]
 0 comments exist: 
 [댓글 스크레이핑 끝]
 >>> 네이버뉴스 없음, continue
+*** 16, [토픽]해외게임통신 185호, '레드 데드 리뎀션 2 온라인'은 11월 말 예정, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=236&aid=0000180588
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 17, "북한·소득주도성장" 후순위 밀리고…"성장·4차산업"으로 무게중심 이동, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=100&oid=015&aid=0004137188
+[댓글 펼치기]
+[댓글 더보기][답글][답글][답글][답글][답글][답글][답글][답글][댓글 스크레이핑 시작]
+13 comments exist: 
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 #1: ['뭘 한다해도 믿음이 안간다 ~', 'open****', '2019.05.09. 13:42:07', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=100&oid=015&aid=0004137188']
+  댓글 #2: ['기자넘들도기사가정직해야지먼문재인잘한다그래엄청못하고있구먼', 'namk****', '2019.05.09. 06:28:33', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=100&oid=015&aid=0004137188']
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 #3: ['일단 버티기 위한 쇼같은데?', 'newj****', '2019.05.08. 12:58:37', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=100&oid=015&aid=0004137188']
+  댓글 #4: ['결국 종합 1위는 북한.', 'last****', '2019.05.08. 08:46:01', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=100&oid=015&aid=0004137188']
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 #5: ['그래서 큰틀에서 이런걸 전문법률용어로사기라고 한다개사기!!! 대동령될때는평등한척 공정한척 정의로운척하다가이게 머냐구!!!', 'ryu4****', '2019.05.07. 22:13:54', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=100&oid=015&aid=0004137188']
+  댓글 #6: ['주뎅이만 살아서 저러지.. 니말은 절대로 안믿는다.. 쩝쩝', 'pakm****', '2019.05.07. 21:59:18', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=100&oid=015&aid=0004137188']
+  댓글 #7: ['폐기를 해야지', 'dfag****', '2019.05.07. 20:45:31', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=100&oid=015&aid=0004137188']
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 #8: ['노동 생산성 낮고 임금 비싸고, 세금 높은데 니는 성공할 수 있겠니? 그냥 있으세요 홍길동님! 경제폭망, 대기업 해체하고 사회혼란틈에 낮은단계 연방제 실행 하려곸ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ', 'tg33****', '2019.05.07. 18:06:58', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=100&oid=015&aid=0004137188']
+[댓글 스크레이핑 끝]
+*** 18, [토픽]해외게임통신 181호, '포켓몬 고' 4세대 포켓몬 업데이트 예고, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=236&aid=0000179165
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
 >>> 네이버뉴스 없음, continue
-*** "코로나19 연구, 역학·임상에서 진단·치료제로 옮겨가고 있어", https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=584&aid=0000008370
+*** 19, "코로나19 연구, 역학·임상에서 진단·치료제로 옮겨가고 있어", https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=584&aid=0000008370
 [댓글 펼치기]
 [댓글 더보기][답글][답글][댓글 스크레이핑 시작]
 2 comments exist: 
   댓글 #1: ['못해낼게 없는 저력있는 한국인 ! 대한민국 화이팅 !', 'doit****', '2020.04.13. 13:09', '1', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=584&aid=0000008370']
   댓글 #2: ['대단하네요', 'chii****', '2020.04.13. 13:26', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=584&aid=0000008370']
 [댓글 스크레이핑 끝]
-*** [토픽]해외게임통신 181호, '포켓몬 고' 4세대 포켓몬 업데이트 예고, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=236&aid=0000179165
-[댓글 펼치기]
-[댓글 스크레이핑 시작]
-0 comments exist: 
-[댓글 스크레이핑 끝]
->>> 네이버뉴스 없음, continue
-[다음 페이지 cur:1]
---------네이버 기사: 10 개------------
-*** [종합] SKT, 미디어 서비스 '크로스오버'…11번가 잇는다, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=031&aid=0000465177
+*** 20, [종합] SKT, 미디어 서비스 '크로스오버'…11번가 잇는다, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=031&aid=0000465177
 [댓글 펼치기]
 [댓글 더보기][답글][댓글 스크레이핑 시작]
 1 comments exist: 
   댓글 #1: ["ㅋㅋㅋ 흔해 빠진 '페*가모' 명품이라고~ 혹시~ 짭?ㅋ", 'airh****', '2018.09.27. 14:46', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=031&aid=0000465177']
 [댓글 스크레이핑 끝]
-*** [토픽]해외게임통신 175호, 닌텐도 모바일게임 '드라갈리아 로스트' 공개, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=236&aid=0000177307
+[다음 페이지 cur:4]
+--------네이버 기사: 10 개------------
+>>> 네이버뉴스 없음, continue
+*** 21, [토픽]해외게임통신 175호, 닌텐도 모바일게임 '드라갈리아 로스트' 공개, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=236&aid=0000177307
 [댓글 펼치기]
 [댓글 더보기][답글][댓글 스크레이핑 시작]
 1 comments exist: 
   댓글 #1: ['미공개 신작: 저지아이즈(기무라 타쿠야 주연)', 'bz89****', '2018.11.30. 17:38', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=236&aid=0000177307']
 [댓글 스크레이핑 끝]
 >>> 네이버뉴스 없음, continue
-*** 2019 학자들은 무엇을 연구했나?, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=004&oid=081&aid=0003053501
+*** 22, 2019 학자들은 무엇을 연구했나?, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=004&oid=081&aid=0003053501
 [댓글 펼치기]
 [댓글 스크레이핑 시작]
 0 comments exist: 
 [댓글 스크레이핑 끝]
-news_idx1:  20
-news_idx2:  20
+*** 23, ‘비식별화’는 없다, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=110&oid=028&aid=0002462773
+[댓글 펼치기]
+[댓글 더보기][답글][답글][댓글 스크레이핑 시작]
+2 comments exist: 
+  댓글 #1: ['좋은 기사 잘 뵜습니다.', 'kmw5****', '2019.07.29. 22:42', '1', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=110&oid=028&aid=0002462773']
+  댓글 #2: ['좋은기사 잘봤습니다.기사내용도 좋을뿐 아니라 빅데이터연구방법을 공부하려고하는데 개념을 알기쉽게 잘 설명해서 많은 도움이되었습니다. 감사합니다^^', 'omos****', '2019.09.08. 09:38', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=110&oid=028&aid=0002462773']
+[댓글 스크레이핑 끝]
+>>> 네이버뉴스 없음, continue
+*** 24, [토픽]해외게임통신 67호, 지갑 조심! 스팀 여름 세일 시작, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=236&aid=0000143372
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+>>> 네이버뉴스 없음, continue
+*** 25, [신간] 도시인류학·뉴스 프레임과 의제의 자동 추출, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=103&oid=001&aid=0011523562
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 26, [빅데이터 대한민국]'초당 69건 ' 쌓고 분석하고 기획하고, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=277&aid=0003477046
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+[다음 페이지 cur:5]
+--------네이버 기사: 10 개------------
+*** 27, [토픽]해외게임통신 74호, '포켓몬 고' 유저 위한 '포켓몬센터' 등장, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=236&aid=0000145918
+[댓글 펼치기]
+[댓글 더보기][답글][답글][댓글 스크레이핑 시작]
+2 comments exist: 
+  댓글 #1: ['역시 스고이하구만ㅎㅎㅎㅎ', 'chil****', '2016.08.12. 20:14', '1', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=236&aid=0000145918']
+  댓글 #2: ['빰.빰 빠바~밤~~', 'yoos****', '2016.08.12. 14:34', '2', '3', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=236&aid=0000145918']
+[댓글 스크레이핑 끝]
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+*** 28, [미래생각]세계적 감염병 이후 사회변화, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=110&oid=003&aid=0009832866
+[댓글 펼치기]
+[댓글 더보기][댓글 스크레이핑 시작]
+1 comments exist: 
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+[댓글 스크레이핑 끝]
+>>> 네이버뉴스 없음, continue
+*** 29, 82년생 김지영│① 불온하지 않은 얼굴, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=106&oid=465&aid=0000004065
+error
+>>> 네이버뉴스 맞음, 구조 다름, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+[다음 페이지 cur:6]
+--------네이버 기사: 10 개------------
+*** 30, 치안정책연구소, 2020년 치안 상황을 전망하다, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=123&oid=298&aid=0000296664
+error
+>>> 네이버뉴스 맞음, 구조 다름, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+[다음 페이지 cur:7]
+--------네이버 기사: 10 개------------
+*** 31, [장덕진의 정치시평]컴퓨터가 읽은 도널드 트럼프, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=110&oid=032&aid=0002814016
+[댓글 펼치기]
+[댓글 더보기][댓글 스크레이핑 시작]
+1 comments exist: 
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+[댓글 스크레이핑 끝]
+*** 32, “유튜버 광고효과, 연예인 따라잡았다” 디비피아, 학술트렌드 분석자료 공개, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=025&aid=0002963321
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 33, 삼성금융계열사 3곳, 고려대와 손잡고 빅데이터 전문가 배출, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=030&aid=0002600703
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+*** 34, [토픽]해외게임통신 112호, 소니 체감형 장난감 토이오 선봬, https://sports.news.naver.com/news.nhn?oid=236&aid=0000157843
+error
+>>> 네이버뉴스 맞음, 구조 다름, continue
+[다음 페이지 cur:8]
+--------네이버 기사: 10 개------------
+*** 35, [단독] 공공기관 여론조사 + 빅데이터 기계 학습 ‘신개념’, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=100&oid=081&aid=0002874660
+[댓글 펼치기]
+[댓글 더보기][답글][댓글 스크레이핑 시작]
+2 comments exist: 
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 #1: ['국가의책임=문통책임=탄핵=세월호=박근혜', 'just****', '2017.12.05. 08:33:47', '1', '3', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=100&oid=081&aid=0002874660']
+[댓글 스크레이핑 끝]
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+*** 36, [빅데이터페어 2013]빅데이터 경진대회-연세대팀 대상 수상, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=030&aid=0002251785
+[댓글 펼치기]
+[댓글 더보기][답글][답글][댓글 스크레이핑 시작]
+2 comments exist: 
+  댓글 #1: ['부럽다 ㅋㅋ개좋겠네 ㅠㅠ 돈받고ㅠㅠ', 'cn16****', '2013.12.19. 23:36', '1', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=030&aid=0002251785']
+  댓글 #2: ['우와 내친구 이름있네 ㅋㅋㅋ추카추카', 'pm_n****', '2013.12.21. 12:48', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=030&aid=0002251785']
+[댓글 스크레이핑 끝]
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+*** 37, [토픽]해외게임통신 147호, 대륙의 배틀그라운드?...무협 배그 '검객X' 등장, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=236&aid=0000168769
+[댓글 펼치기]
+[댓글 더보기][댓글 스크레이핑 시작]
+1 comments exist: 
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+[댓글 스크레이핑 끝]
+>>> 네이버뉴스 없음, continue
+[다음 페이지 cur:9]
+--------네이버 기사: 10 개------------
+>>> 네이버뉴스 없음, continue
+*** 38, 대기역학 연구자 손석우 서울대 교수 “성층권에 동풍이 불면…”, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=110&oid=053&aid=0000027299
+[댓글 펼치기]
+[댓글 더보기][답글][댓글 스크레이핑 시작]
+1 comments exist: 
+  댓글 #1: ['와 기자님 대단하시네요.. 저런 훌륭한 분을 심층취재해서 이렇게 훌륭한 기사를 내주시다니.. 오랫만에 좋은 기사를 아주 잼있게 봤습니다. 손석우교수님은 집필하신 책이 따로 있나요? 어째든 기사 잘봤습니다', 'hans****', '2020.04.23. 00:01', '2', '2', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=110&oid=053&aid=0000027299']
+[댓글 스크레이핑 끝]
+*** 39, “해외토픽서만 봤던 네발 로봇이 국내 건설현장에”… GS건설, 업계 최초 자율보행로봇 ‘스팟’ 도입, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=020&aid=0003297389
+[댓글 펼치기]
+[댓글 더보기][답글][답글][답글][답글][답글][댓글 스크레이핑 시작]
+6 comments exist: 
+  댓글 #1: ['GS ㅋ ㅋ 로봇 한대 실력으로 결과로 승부하샘 보여주기하지마셈', 'wpdb****', '2020.07.13. 23:39', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=020&aid=0003297389']
+  댓글 #2: ['5년 쓴다치면 1년에 1800만원인데...밥도 안먹고 담배도 안피고 매일매일 일 시켜도 되고 위험을 마다하지않고 힘도 엄청 좋고 완전 괜찮네ㅋ', 'anid****', '2020.07.13. 21:11', '2', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=020&aid=0003297389']
+  댓글 #3: ['우리나라도 이런 로봇 얼른 개발해야 할텐데..', 'papa****', '2020.07.13. 19:47', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=020&aid=0003297389']
+  댓글 #4: ['1대에 9천만원짜리를 건설현장에서 어케 쓰냐ㅡㅡ GS건설 괜히 쑈질하는거지 한달뒤에 저 로봇 없어지거나 다리 다 부러진다 ㅋㅋㅋ', 'dldl****', '2020.07.13. 11:59', '3', '2', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=020&aid=0003297389']
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 #5: ['귀엽다고 집에 들고 가서 키울려는 사람 나올 듯.', 'woon****', '2020.07.13. 11:37', '2', '1', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=020&aid=0003297389']
+[댓글 스크레이핑 끝]
+*** 40, 크리스마스 트리, 올해는 3D프린터로 만들어 볼까, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=469&aid=0000443589
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 41, 방탄소년단 뷔 팬들, 데뷔 7주년 광고 기획…"뷔의 명품 비주얼에 어울리는 완벽 서포트", https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=106&oid=016&aid=0001676508
+error
+>>> 네이버뉴스 맞음, 구조 다름, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+[다음 페이지 cur:10]
+--------네이버 기사: 10 개------------
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+*** 42, [토픽]해외게임통신 112호, 소니 체감형 장난감 토이오 선봬, https://sports.news.naver.com/news.nhn?oid=236&aid=0000157843
+error
+>>> 네이버뉴스 맞음, 구조 다름, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+[다음 페이지 cur:11]
+--------네이버 기사: 10 개------------
+>>> 네이버뉴스 없음, continue
+*** 43, 삼성 빅데이터 아카데미 수료식 열려, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=009&aid=0003923919
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+>>> 네이버뉴스 없음, continue
+*** 44, [빅데이터페어 2013]빅데이터 경진대회-연세대팀 대상 수상, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=030&aid=0002251785
+[댓글 펼치기]
+[댓글 더보기][답글][답글][댓글 스크레이핑 시작]
+2 comments exist: 
+  댓글 #1: ['부럽다 ㅋㅋ개좋겠네 ㅠㅠ 돈받고ㅠㅠ', 'cn16****', '2013.12.19. 23:36', '1', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=030&aid=0002251785']
+  댓글 #2: ['우와 내친구 이름있네 ㅋㅋㅋ추카추카', 'pm_n****', '2013.12.21. 12:48', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=030&aid=0002251785']
+[댓글 스크레이핑 끝]
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+*** 45, [토픽]해외게임통신 147호, 대륙의 배틀그라운드?...무협 배그 '검객X' 등장, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=236&aid=0000168769
+[댓글 펼치기]
+[댓글 더보기][댓글 스크레이핑 시작]
+1 comments exist: 
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+[댓글 스크레이핑 끝]
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+[다음 페이지 cur:12]
+--------네이버 기사: 10 개------------
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+*** 46, 대기역학 연구자 손석우 서울대 교수 “성층권에 동풍이 불면…”, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=110&oid=053&aid=0000027299
+[댓글 펼치기]
+[댓글 더보기][답글][댓글 스크레이핑 시작]
+1 comments exist: 
+  댓글 #1: ['와 기자님 대단하시네요.. 저런 훌륭한 분을 심층취재해서 이렇게 훌륭한 기사를 내주시다니.. 오랫만에 좋은 기사를 아주 잼있게 봤습니다. 손석우교수님은 집필하신 책이 따로 있나요? 어째든 기사 잘봤습니다', 'hans****', '2020.04.23. 00:01', '2', '2', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=110&oid=053&aid=0000027299']
+[댓글 스크레이핑 끝]
+*** 47, “해외토픽서만 봤던 네발 로봇이 국내 건설현장에”… GS건설, 업계 최초 자율보행로봇 ‘스팟’ 도입, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=020&aid=0003297389
+[댓글 펼치기]
+[댓글 더보기][답글][답글][답글][답글][답글][댓글 스크레이핑 시작]
+6 comments exist: 
+  댓글 #1: ['GS ㅋ ㅋ 로봇 한대 실력으로 결과로 승부하샘 보여주기하지마셈', 'wpdb****', '2020.07.13. 23:39', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=020&aid=0003297389']
+  댓글 #2: ['5년 쓴다치면 1년에 1800만원인데...밥도 안먹고 담배도 안피고 매일매일 일 시켜도 되고 위험을 마다하지않고 힘도 엄청 좋고 완전 괜찮네ㅋ', 'anid****', '2020.07.13. 21:11', '2', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=020&aid=0003297389']
+  댓글 #3: ['우리나라도 이런 로봇 얼른 개발해야 할텐데..', 'papa****', '2020.07.13. 19:47', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=020&aid=0003297389']
+  댓글 #4: ['1대에 9천만원짜리를 건설현장에서 어케 쓰냐ㅡㅡ GS건설 괜히 쑈질하는거지 한달뒤에 저 로봇 없어지거나 다리 다 부러진다 ㅋㅋㅋ', 'dldl****', '2020.07.13. 11:59', '3', '2', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=020&aid=0003297389']
+  댓글 ===> skip [삭제되거나 부적절한 댓글]
+  댓글 #5: ['귀엽다고 집에 들고 가서 키울려는 사람 나올 듯.', 'woon****', '2020.07.13. 11:37', '2', '1', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=020&aid=0003297389']
+[댓글 스크레이핑 끝]
+*** 48, 크리스마스 트리, 올해는 3D프린터로 만들어 볼까, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=469&aid=0000443589
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+>>> 네이버뉴스 없음, continue
+*** 49, 방탄소년단 뷔 팬들, 데뷔 7주년 광고 기획…"뷔의 명품 비주얼에 어울리는 완벽 서포트", https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=106&oid=016&aid=0001676508
+error
+>>> 네이버뉴스 맞음, 구조 다름, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+[다음 페이지 cur:13]
+--------네이버 기사: 10 개------------
+*** 50, [스타트업 브리핑] 헬스케어 스타트업이 '쑥쑥', 각 기업의 방향성은?, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=020&aid=0002942609
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 51, 한미약품, 퀀텀프로젝트 등 당뇨신약 발표, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=004&oid=123&aid=0002105312
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+>>> 네이버뉴스 없음, continue
+*** 52, 전이성유방암 생존기간 2000년대 초반보다 2배 늘어, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=103&oid=123&aid=0002128876
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+*** 53, 싱가포르 지하철 강자 GS건설, 또 1조7천억원 수주, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=123&aid=0002131429
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 54, [인터뷰] 운동 소녀에서 대표까지, 유니티 코리아 '김인숙' 지사장, https://sports.news.naver.com/news.nhn?oid=442&aid=0000088887
+error
+>>> 네이버뉴스 맞음, 구조 다름, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+[다음 페이지 cur:14]
+--------네이버 기사: 10 개------------
+*** 55, 스테로이드 검출 화장품 및 함량 미달 기능성화장품 회수 조치, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=103&oid=123&aid=0002123643
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 56, 상상의 자동차를 실물로… 손끝의 마법, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=020&aid=0002343763
+[댓글 펼치기]
+[댓글 더보기][답글][답글][댓글 스크레이핑 시작]
+2 comments exist: 
+  댓글 #1: ['자동차 디자인을 입체적으로 형상화하는 일을 하는 것이 멋있어요. 자동차 모델러들이 국내에서도 좋은대접을 받았으면 좋겠어요.', 'kkw0****', '2012.06.18. 13:14', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=020&aid=0002343763']
+  댓글 #2: ['연비좋은승용차만만들지말고... 트럭도좀 만들어라.....', 'eodd****', '2012.06.18. 10:25', '0', '0', 'https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=020&aid=0002343763']
+[댓글 스크레이핑 끝]
+*** 57, 식약처, 의료기기 경쟁력 강화 위한 소통의 장 개최, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=103&oid=123&aid=0002137206
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 58, 금융실무교육 전문기관 월스트릿트레이닝, 11월23일 금융 네트워킹 진행, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=421&aid=0003725037
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 59, 제약협회, '의약품 신기술 연구 사례' 워키움 개최, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=103&oid=123&aid=0002137007
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+*** 60, 네시삼십삼분 야심작 ‘회색도시’, 인터넷 화제, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=103&oid=020&aid=0002457043
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 61, [새책 200자평] '오가닉 비즈니스'부터 '안녕히 주무셨어요?'까지, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=366&aid=0000317047
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 62, 노벨화학상 美 카르플루스-레빗-와르셸, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=104&oid=020&aid=0002479680
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+[다음 페이지 cur:15]
+--------네이버 기사: 10 개------------
+*** 63, 노벨화학상 美 카르플루스-레빗-와르셸, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=104&oid=020&aid=0002479680
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 64, SK,'한국 창조경제' 중국과 일대일로 활성화 지원, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=123&aid=0002120551
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+>>> 네이버뉴스 없음, continue
+*** 65, 롯데건설 초고층 기술자, 세계인명사전에 등재, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=123&aid=0002113598
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 66, 앱코, 2가지 모델 '에이전트 시리즈' PC케이스 공개, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=004&oid=123&aid=0002099281
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 67, GS건설, 싱가포르 '선풍기팬 디자인' 종합병원 준공, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=123&aid=0002118456
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 68, SK텔레콤, 빅데이터 활용 '창업성공 예측모형' 개발, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=004&oid=123&aid=0002116069
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 69, ‘언니네 핫 초이스’ 스테파니와 레이디 제인의 파격적 변신 '경악', https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=004&oid=421&aid=0001947364
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+>>> 네이버뉴스 없음, continue
+*** 70, [고려大 미래과학 콘서트]노벨상 수상 연사 4人, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=020&aid=0002483334
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+[다음 페이지 cur:16]
+--------네이버 기사: 10 개------------
+*** 71, 검색전문 컨퍼런스 열린다, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=277&aid=0002009281
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+>>> 네이버뉴스 없음, continue
+*** 72, [한국산업기술대학교]7개 학과-5개 학부, 산업기술대 이끈다, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=020&aid=0002451874
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 73, 대박난 QM3 '인큐베이터' 佛르노테크노센터 가보니, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=008&aid=0003437460
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 74, [서울과학기술대학교]기계설계 동아리 MDS, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=020&aid=0002451231
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 75, [3월 2주차 온라인 순위] "오픈 버프 끝, 어떻게 반등하죠?" 'WoW'와 '최군'의 대답, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=442&aid=0000011280
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+>>> 네이버뉴스 없음, continue
+*** 76, [CAR]르노삼성차 “亞太고객의 취향 여기서 잡는다”, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=103&oid=020&aid=0002426289
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+>>> 네이버뉴스 없음, continue
+*** 77, [과학세상/박형주]수학교육은 국가경쟁력의 원천, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=110&oid=020&aid=0002346285
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+[다음 페이지 cur:17]
+--------네이버 기사: 10 개------------
+*** 78, 아이폰6S(아이폰7), 배터리 사용시간 획기적 증가?, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=004&oid=123&aid=0002099194
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 79, [특별기획] BDO 이현회계법인, 이현세무법인 탐방 ④ M&A·기업공개·기업금융 해결사들 BDO 만나 '날개', https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=123&aid=0002135986
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+>>> 네이버뉴스 없음, continue
+*** 80, 검색 시장의 미래, 기술과 정보 제공에 달렸다, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=030&aid=0001970252
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 81, 검색기술 컨퍼런스 ‘S.T.S. 2008’ 개막, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=030&aid=0001964513
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 82, 국내 최초 검색전문 컨퍼런스 개최, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=092&aid=0001941591
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 83, [Industrial Review]크로센트, 빠르고 안정적 금융서비스 SW 선도 기업, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=020&aid=0002337389
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 84, [신나는 공부/꿈을 만나다]최정윤 대한슈가크래프트협회 부회장·홍서윤 KBS앵커, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=020&aid=0002447568
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 85, [신문과 놀자!]‘2012 신문사랑 전국 NIE 공모전’ 분야별 대상 수상자 - 작품 소개, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=004&oid=020&aid=0002373630
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 86, [인물동정]한국전문대학교육협의회 外, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=020&aid=0002342641
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+[다음 페이지 cur:18]
+--------네이버 기사: 10 개------------
+*** 87, [창간93주년/가자!한국기업]대우조선해양, 친환경 고효율 ‘그린십’ 꿈 순항, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=020&aid=0002420031
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 88, <AsiaNet> 벤틀리, Be Connected 온라인 세미나 시리즈 발표, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=104&oid=001&aid=0002711393
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 89, [단독]와르셸 “노벨상 발표후 한국서 첫 대중강연… 더 떨려”, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=020&aid=0002483404
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+>>> 네이버뉴스 없음, continue
+*** 90, [대전/충남]관정업자도 포기한 곳서 지하수 “심봤다”, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=102&oid=020&aid=0002400862
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 91, [열린마당]시맨틱 웹으로 진화하는 웹, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=030&aid=0000125136
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 92, [우먼 동아일보 컬처 뉴스] 한·중·일 3국, 중국 베이징에서 ‘아름다운 경제’ 포럼 개최, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=004&oid=020&aid=0002365834
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 93, [SMART 혁명/하이테크특집]포스코, 구글과 손잡고 제조업의 혁신 ‘제철소 IT화’ 이룩한다, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=020&aid=0002339362
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 94, IDATE, ‘인터넷의 미래’를 주제로 제30회 ‘2008 디지월드 서밋’ 11월에 개최, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=003&aid=0002002475
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 95, IBM, SOA 전문가 단기 양성과정 개설, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=138&aid=0000012113
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+[다음 페이지 cur:19]
+--------네이버 기사: 10 개------------
+*** 96, <AsiaNet> 웨이퍼 레벨 칩 스케일 패키징 포럼, 새너제이 IWLPC에 참석, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=104&oid=001&aid=0002313009
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 97, 컨버스온, 챗스레즈와 함께 온라인 대화와 오프라인 입소문 종합한 분석시스템 '코러스' 출시, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=003&aid=0003154745
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+*** 98, [100세시대 부동산 재테크] 모델하우스 제대로 보는 요령 8가지, https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=004&oid=123&aid=0002128211
+[댓글 펼치기]
+[댓글 스크레이핑 시작]
+0 comments exist: 
+[댓글 스크레이핑 끝]
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+>>> 네이버뉴스 없음, continue
+[다음 페이지 cur:20]
+There are no more pages
 
 ----------------------------------------------- news_df
                                                 Title  ...                                                URL
 0                              변덕꾸러기 토픽모델링 어떻게 다뤄야 하나  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
 1                     지난 29년 동성애 관련 기사의 가장 큰 토픽은 ‘사랑’  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
-2                      ‘에이즈’에서 ‘인권’으로…기계학습이 드러낸 극적 변화  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
-3                         쓰레기+네이버+하태경 젠더 갈등의 은밀한 카르텔?  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
-4                공주대 김태종 박사, 뉴스 빅데이터 연구로 KCI 등재학술지 게재  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
-5                      농협, 핀테크 기업과 NH핀테크 오픈플랫폼 모델링 협약  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
-6               20대 국회 지역뉴스로 본 정책 핵심 열쇳말은 미세먼지·교육·아파트  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
-7                                서울 이산화탄소 파수꾼 자처한 과학자  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
-8   [토픽]해외게임통신 234호, "신작 '콜 오브 듀티' 잔혹한 묘사로 러시아 판매 중지"  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
-9            [토픽]해외게임통신 220호, 유비소프트 '유플레이 플러스' 라인업 발표  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
-10         [토픽]해외게임통신 215호, 신작 '젤다의 전설'에 사용된 음악의 정체는?  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
-11                 "예방 저널리즘 부족한 언론, '위기 극복' 시민들 주목해야"  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
-12  [토픽]해외게임통신 207호, 노트르담 성당 복구 위해 '어쌔신크리드 유니티' 무료 배포  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
-13                    "자살자 휴대전화 분석해 원인 파악 가능…예방에도 기여"  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
-14       [토픽]해외게임통신 185호, '레드 데드 리뎀션 2 온라인'은 11월 말 예정  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
-15                "코로나19 연구, 역학·임상에서 진단·치료제로 옮겨가고 있어"  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
-16           [토픽]해외게임통신 181호, '포켓몬 고' 4세대 포켓몬 업데이트 예고  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
-17                 [종합] SKT, 미디어 서비스 '크로스오버'…11번가 잇는다  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
-18          [토픽]해외게임통신 175호, 닌텐도 모바일게임 '드라갈리아 로스트' 공개  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
-19                                2019 학자들은 무엇을 연구했나?  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
+2                              거짓 자소서, AI 입학사정관이 잡아낸다  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
+3                      ‘에이즈’에서 ‘인권’으로…기계학습이 드러낸 극적 변화  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
+4        [데이터로 본 한국인] 코로나19 초기부터 쏟아진 기사, 확산 방지에 도움 됐나  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
+..                                                ...  ...                                                ...
+85  IDATE, ‘인터넷의 미래’를 주제로 제30회 ‘2008 디지월드 서밋’ 11월에 개최  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
+86                            IBM, SOA 전문가 단기 양성과정 개설  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
+87      <AsiaNet> 웨이퍼 레벨 칩 스케일 패키징 포럼, 새너제이 IWLPC에 참석  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
+88  컨버스온, 챗스레즈와 함께 온라인 대화와 오프라인 입소문 종합한 분석시스템 '코러스...  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
+89               [100세시대 부동산 재테크] 모델하우스 제대로 보는 요령 8가지  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
 
-[20 rows x 11 columns]
+[90 rows x 11 columns]
 
 ----------------------------------------------- comments_df
-                                              Contents  ...                                                URL
-0    동성애는 남자끼리 항문섹스하는데 에이즈일등공신이라는디? 더럽게항문섹스라니,항문은 대...  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
-1    '사랑' 으로 동성애를 하신다는분들이, 상대를 찾을때 '식성' 이라는 단어를 쓰시는...  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
-2                                 동성애 절대 반대입니다 에이즈 확산!  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
-3                                            에이즈아니니가요?  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
-0            언론이 질병 감염을 사실대로 알려야지~~~동성애자의 최후결말은 어떻지???  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
-..                                                 ...  ...                                                ...
-283  2017 경찰청 범죄자 성별 자료 中 강력범죄 남성 범죄자 96.4%, 여성 범죄자...  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
-0                        못해낼게 없는 저력있는 한국인 ! 대한민국 화이팅 !  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
-1                                                대단하네요  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
-0                      ㅋㅋㅋ 흔해 빠진 '페*가모' 명품이라고~ 혹시~ 짭?ㅋ  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
-0                            미공개 신작: 저지아이즈(기무라 타쿠야 주연)  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
+                                             Contents  ...                                                URL
+0   동성애는 남자끼리 항문섹스하는데 에이즈일등공신이라는디? 더럽게항문섹스라니,항문은 대...  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
+1   '사랑' 으로 동성애를 하신다는분들이, 상대를 찾을때 '식성' 이라는 단어를 쓰시는...  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
+2                                동성애 절대 반대입니다 에이즈 확산!  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
+3                                           에이즈아니니가요?  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
+0   예를 들어 A학생이 1번 항목에서 “친구들과 어울리기를 즐긴다”고 했는데 3번 항목...  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
+..                                                ...  ...                                                ...
+2                           우리나라도 이런 로봇 얼른 개발해야 할텐데..  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
+3   1대에 9천만원짜리를 건설현장에서 어케 쓰냐ㅡㅡ GS건설 괜히 쑈질하는거지 한달뒤에...  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
+4                         귀엽다고 집에 들고 가서 키울려는 사람 나올 듯.  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
+0   자동차 디자인을 입체적으로 형상화하는 일을 하는 것이 멋있어요. 자동차 모델러들이 ...  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
+1                     연비좋은승용차만만들지말고... 트럭도좀 만들어라.....  ...  https://news.naver.com/main/read.nhn?mode=LSD&...
 
-[295 rows x 6 columns]
+[390 rows x 6 columns]
