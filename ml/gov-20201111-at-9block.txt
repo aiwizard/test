@@ -1,0 +1,50 @@
+입력
+	# of images: 3,000,000
+	class: 1,200
+	img size: 3mb
+
+필수 전처리 for training
+	down sizing	===> auto sizer
+	binarize
+	normalization
+
+http://www.kibme.org/resources/journal/20181023162928066.pdf
+
+
+https://www.google.com/search?q=이미지+분류+모델+이미지+사이즈
+https://github.com/KerasKorea/KEKOxTutorial/blob/master/35_케라스를%20이용한%20다중%20라벨%20분류.md
+https://www.google.com/search?source=hp&ei=D4-rX4iBONKImAXXkoboBQ&q=이미지+학습+클래스+수
+https://3months.tistory.com/512
+
+https://twinw.tistory.com/252
+	이미지로 CNN 훈련 및 사용
+	resize
+	
+https://antilibrary.org/1980
+
+확인
+	binary_crossentropy
+
+다중 분류(Multiple Classification)
+	https://m.blog.naver.com/guseod24/221495160740
+
+http://blog.naver.com/PostView.nhn?blogId=sw4r&logNo=221734454450
+
+https://sims-solve.tistory.com/18
+https://tensorflow.blog/케라스-딥러닝/3-5-뉴스-기사-분류-다중-분류-문제/
+
+
+손실함수
+	https://dsbook.tistory.com/64
+	https://bskyvision.com/822
+	https://wordbe.tistory.com/entry/ML-Cross-entropyCategorical-Binary의-이해
+	http://www.gisdeveloper.co.kr/?p=8668
+최적화
+	https://dsbook.tistory.com/68?category=780563
+
+성능 평가
+	https://moons08.github.io/datascience/classification_score_basic/
+	https://nittaku.tistory.com/295
+	https://www.youtube.com/watch?v=8DbC39cvvis
+	https://www.google.com/search?ei=FZWrX-S_LsH4hwPM4YzIAg&q=다중+분류+모델+성능+평가
+

@@ -13,9 +13,10 @@
 
 
 
-https://www.youtube.com/watch?v=In5KCBqzViU
-https://www.youtube.com/watch?v=0OY6-04fT9Y	데이터 수집 개요 Overview of Data Collection
+https://www.youtube.com/watch?v=In5KCBqzViU		BeautifulSoup 네이버 뉴스 기사 스크래핑
+https://www.youtube.com/watch?v=0OY6-04fT9Y		데이터 수집 개요 Overview of Data Collection
+https://smorning.tistory.com/331				BeautifulSoup, find 와 select 를 사용한 웹 크롤링
+https://gafas.tistory.com/8						BeautifulSoup find와 select 차이점
+
 https://blog.naver.com/woohuyck111/220974327598
-https://smorning.tistory.com/331
-https://gafas.tistory.com/8
 
