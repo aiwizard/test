@@ -1,0 +1,42 @@
+tqdm
+
+####################### graph
+seaborn
+matplotlib
+
+####################### youtube
+###pytube3
+
+####################### sound, asr, tts
+playsound
+#pyaudio	pip3로 설치안됨, sudo apt install python3-pyaudio 로 설치 완료
+
+librosa
+gTTS
+speechrecognition
+
+####################### nlp
+konlpy
+nltk
+# python3 -c "import nltk; nltk.download('punkt')"
+
+hgtk
+pyLDAvis
+
+####################### vision
+opencv-python
+opencv-contrib-python
+
+####################### web, crawling, scraping
+flask
+selenium
+bs4
+
+####################### GUI
+pysimplegui
+guizero
+#tkinter		sudo apt install python3-ty 로 설치
+
+####################### Game
+pygame
+

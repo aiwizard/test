@@ -1,0 +1,52 @@
+
+이수안컴퓨터연구소	(nlp, crawling, game ...)
+	컴퓨터 비전
+	오디오 음성처리
+	자연어 처리
+	딥러닝 프레임워크
+	
+	데이터 수집/분석/시각화
+
+
+조코딩
+나도코딩
+
+---------------------------------------------------------------------------------------
+https://beomi.github.io/gb-crawling/posts/2017-07-05-HowToMakeWebCrawler-with-Multiprocess.html
+	N배 빠른 클로링, multiprocessing
+
+https://namu.wiki/w/Python
+	멀티코어, 멀티스레드
+
+
+
+
+if __name__ == '__main__':
+	https://digital-play.tistory.com/49
+	https://ohdowon064.tistory.com/317
+	
+워드클라우드
+	https://brunch.co.kr/@jiheon0105/43
+	
+네이버 뉴스 댓글
+	https://www.youtube.com/watch?v=IFyhTEBSto0
+
+기상청 xml 데이터 가져오기 (rss 파싱)
+	https://codingcoding.tistory.com/1049
+
+multiprocessing
+	https://saintbeller96.tistory.com/29		#생산자-소비자 문제
+	https://purplechip.tistory.com/46?category=919606
+	
+	
+--------------------------------------------------------------------------------	
+횡성
+	https://www.youtube.com/watch?v=QA44MOWL_-4
+	
+Freelancer
+	https://freemon.co.kr/home#none
+	
+be 동사 생략
+	Installing component Sources.
+	All downloads finished.
+

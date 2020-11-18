@@ -1,0 +1,29 @@
+0. Anaconda 다운로드 및 설치
+	https://www.anaconda.com/products/individual
+	Advanced option:
+		v Add Anaconda3 to my PATH environment variable.
+		v Register Anaconda3 as  my default Python 3.x
+		
+	0.1 확인
+		> python -c "print('hello world')"
+	
+	0.2 현재 아나콘다에 설치되어 있는 라이브러리 목록을 출력
+		> conda list
+
+---------------------------------------------------------
+1. 가상환경 생성 (사용할 파이썬 버전 명시 - 옵션) 및 삭제
+	conda create -n <가상환경 이름> python=3.7
+	conda env remove -n <가상환경 이름>
+
+2. 설치한 가상환경 확인
+	conda env list
+
+3. 가상환경 활성화(activate)
+	Windows: [conda] activate <가상환경 이름>
+	Linux: 		source activate <가상환경 이름>
+	
+4. 가상환경 비활성화(deactivate)
+	conda deactivate
+
+참고: https://medium.com/@5eo1ab/conda-env-터미널-명령어-adc8366f8a9d
+
