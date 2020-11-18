@@ -1,0 +1,9 @@
+비트 연산자를 이용한 다중 플래그 처리
+	https://m.blog.naver.com/realsnake/100056012551
+
+systemctl
+	https://search.daum.net/search?q=systemctl
+	https://gsk121.tistory.com/406
+	https://blog.naver.com/sadaudgh/221949956085
+	https://mygumy.tistory.com/43
+	
