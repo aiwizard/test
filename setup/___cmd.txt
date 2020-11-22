@@ -1,0 +1,12 @@
+https://www.lesstif.com/lpt/apt-24445574.html
+
+전체 설치 패키지 확인
+	apt list --installed
+
+특정 패키지 설치 여부 확인
+	apt -qq list gcc
+
+
+dpkg --get-selections | grep -v deinstall
+dpkg --get-selections | grep postgres
+

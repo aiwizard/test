@@ -1,0 +1,40 @@
+
+
+https://hanburn.tistory.com/175
+	1. ffmpeg	: command line 도구 (영상 크기, 코덱 변경 
+	2. ffserver	: 동영상 streaming을 위한 서버 
+	3. ffplay	: SDL 이라는 오픈소스 기반으로 player를 해주는 컴포넌트 
+	4. ffprobe	: 간단한 멀티미디어(동영상) 분석도구 
+
+
+예1) 특정 구간 잘라내기
+	ffmpeg -i input.mp4 -vn -ss 5 -to 10 -c copy ouput.mp4
+		-ss 5	: 시작 위치를 5초부터
+		-to 10	: 끝 위치를 10초까지
+
+
+예2) 끝부분을 부드럽게 crop 하기 위해서 fade out 효과 주기
+	ffmpeg -i input.mp4 -to 30 -filter_complex "afade=t=out:st=28:d=2" output.mp3
+		-to 30			: 처음부터 30초까지 잘라내라
+		-filter_complex	: 복합필터를 적용하라는 뜻 
+		"afade=t=out"	: fade효과인데 타입(t)은 서서히 줄어드는 효과(out) 
+		st=28			: (startTime) 28초부터 시작해서 
+		d=2				: (duration) 2초동안 fadeout
+		
+
+예3) 10초 부터 30초까지 잘라내는데, 10초부터 fadein 1초, 29초부터 fadout 1초 적용
+	ffmpeg -i input.mp4 -ss 10 -to 30 -filter_complex "afade=t=in:st=10:d=1,afade=t=out:st=29:d=1" output.mp3
+
+
+예4) 처음부터 30분(1800초) 까지 잘라내는데, 처음 1초는 fadein, 마지막 2초는 fadeout 으로 
+	ffmpeg -i "in.mp3" -ss 0 -to 1800 -filter_complex "afade=t=in:st=0:d=1,afade=t=out:st=1798:d=2" "out.mp3"
+
+
+예5) mp3 이어 붙이기.
+	ffmpeg -stream_loop 1 -i input.mp3 -c copy output_loop.mp3
+		-stream_loop n : n번 반복, 0은 반복 없음. -1은 무한 반복
+
+
+예6) vidio + audio 합치기
+	ffmpeg -i audio_only.mp3 -i video_only.mp4 -c copy ouput_mux.mp4
+

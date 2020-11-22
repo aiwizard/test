@@ -1,0 +1,22 @@
+find
+	'abc' 를 찾아서 지워라
+		find [찾을 위치] [옵션] -exec rm {} \;
+		find . -name "abc*" -exec rm {} \;
+	
+	
+	$ find . 							: 현재와 하위 폴더 모든 정보를 출력
+	$ find . -name "test*" -type d					: 디렉토리를 찾는다
+	$ find . -name "*.pdf"				: 지정 파일 찾기
+	$ find . -name "*.pdf"  > out.txt	: 검색 결과를 문서파일로 저장
+
+	$ find . | grep text.txt			: 파이프'|'는 결과를 넘겨준다 
+
+	$ find . -name "*.txt" | xargs grep "Hello" | less	: 문서에서 "Hello"를 찾는고 화면씩 보여준다
+	$ find . -name "*.txt" -exec rm {} \;			: 검색한 결과 파일을 지운다
+	$ find . -name "* *" -exec rm -f {} \;			: 공백이 있는 파일들 지운다 ("* *" 는 공백을 의미)
+
+	$ find . -maxdepth 2 -name '*.txt'				: 폴더 깊이를 2단계로 제한하여 검색
+	$ sudo find / -size +10M -exec ls -lh {} \;		: 용량을 지정 (sudo로 권한문제 해결)
+	$ find / -name "test*" 2>/dev/null				: 권한 오류를 회피할 수 있다.
+	$ find . -empty									: 빈파일을 찾는다
+
