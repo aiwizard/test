@@ -22,12 +22,12 @@ https://hanburn.tistory.com/175
 		d=2				: (duration) 2초동안 fadeout
 		
 
-예3) 10초 부터 30초까지 잘라내는데, 10초부터 fadein 1초, 29초부터 fadout 1초 적용
-	ffmpeg -i input.mp4 -ss 10 -to 30 -filter_complex "afade=t=in:st=10:d=1,afade=t=out:st=29:d=1" output.mp3
-
-
-예4) 처음부터 30분(1800초) 까지 잘라내는데, 처음 1초는 fadein, 마지막 2초는 fadeout 으로 
+예3) 처음부터 30분(1800초) 까지 잘라내는데, 처음 1초는 fadein, 마지막 2초는 fadeout 으로 
 	ffmpeg -i "in.mp3" -ss 0 -to 1800 -filter_complex "afade=t=in:st=0:d=1,afade=t=out:st=1798:d=2" "out.mp3"
+
+
+예4) 10초 부터 30초까지 잘라내는데, 10초부터 fadein 1초, 29초부터 fadout 1초 적용
+	ffmpeg -i input.mp4 -ss 10 -to 30 -filter_complex "afade=t=in:st=10:d=1,afade=t=out:st=29:d=1" output.mp3
 
 
 예5) mp3 이어 붙이기.

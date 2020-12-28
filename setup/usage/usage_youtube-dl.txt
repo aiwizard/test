@@ -3,11 +3,11 @@
 		sudo apt install youtube-dl
 		sudo apt remove -y youtube-dl
 		
-		==> 최신버전 설치하기
-		//https://github.com/ytdl-org/youtube-dl/blob/master/README.md#how-do-i-update-youtube-dl
-		sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
-		sudo chmod a+rx /usr/local/bin/youtube-dl
-		hash -r
+		==> 최신버전 소스로부터 설치하기
+			//https://github.com/ytdl-org/youtube-dl/blob/master/README.md#how-do-i-update-youtube-dl
+			sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
+			sudo chmod a+rx /usr/local/bin/youtube-dl
+			hash -r
 
 	0. 참고
 		https://kutar37.tistory.com/229
@@ -22,6 +22,7 @@
 
 	2. 플레이리스트 받기(%가 안되면 %%로 할 것)
 		youtube-dl -ic -o "%(title)s.%(ext)s" --yes-playlist -x --audio-format mp3 --audio-quality 0 <플레이리스트주소>
+		youtube-dl -ic -o "%(title)s.%(ext)s" -x --audio-format mp3 --audio-quality 0 --yes-playlist <플레이리스트주소>
 
 	3. 플레이리스트 중, 앞에 5개만 받으려면?
-		youtube-dl -ic -o "%(title)s.%(ext)s"  -x --audio-format mp3 --audio-quality 0 --playlist-start 1 --playlist-end 5 <플레이리스트주소>
+		youtube-dl -ic -o "%(title)s.%(ext)s" -x --audio-format mp3 --audio-quality 0 --playlist-start 1 --playlist-end 5 <플레이리스트주소>

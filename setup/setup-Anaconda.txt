@@ -1,26 +1,41 @@
 0. Anaconda 다운로드 및 설치
-	https://www.anaconda.com/products/individual
-	Advanced option:
-		v Add Anaconda3 to my PATH environment variable.
-		v Register Anaconda3 as  my default Python 3.x
-		
+	0.0 https://www.anaconda.com/products/individual
+
+	0.0 권한 변경 및 설치
+		chmod +x ./Anaconda3-2020.11-Linux-x86_64.sh
+		sudo ./Anaconda3-2020.11-Linux-x86_64.sh
+
+			Advanced option:
+				v Add Anaconda3 to my PATH environment variable.
+				v Register Anaconda3 as  my default Python 3.x
+				
 	0.1 확인
 		> python -c "print('hello world')"
 	
 	0.2 현재 아나콘다에 설치되어 있는 라이브러리 목록을 출력
 		> conda list
+		
+	0.3 제거
+		https://stackoverflow.com/questions/22585235/python-anaconda-how-to-safely-uninstall
+		
 
----------------------------------------------------------
+1. 아나콘다 클라우드
+	created
+
+Usage
+--------------------------------------------------------
 1. 가상환경 생성 (사용할 파이썬 버전 명시 - 옵션) 및 삭제
 	conda create -n <가상환경 이름> python=3.7
 	conda env remove -n <가상환경 이름>
+	conda remove --name <가상환경 이름> --all
 
 2. 설치한 가상환경 확인
 	conda env list
 
 3. 가상환경 활성화(activate)
-	Windows: [conda] activate <가상환경 이름>
-	Linux: 		source activate <가상환경 이름>
+	Windows:	[conda] activate <가상환경 이름>
+	Linux: 	conda activate <가상환경 이름>
+				source activate <가상환경 이름>
 	
 4. 가상환경 비활성화(deactivate)
 	conda deactivate

@@ -1,0 +1,21 @@
+﻿
+adduser <name>	// 홈디렉토리 포함
+userdel -r <name>	//사용자와 관련된 모든 것을 제거
+
+
+----------------------------------------------------------------------------------
+https://erwinousy.medium.com/screen-command-사용법-linux-mac-62bf5dd23110
+
+0. 스크린 세션 목록 확인	screen -ls
+1. 생성 및 접속			screen -S "name"
+2. Detach				Ctrl + a + d
+3. 세션 재연결			screen -r "name" | <id>
+
+4. 세션 나가기 및 종료		exit
+5. Detach 세션 종료하기	screen -X -S <screenId> quit
+
+
+스크롤하기	Ctrl + a + <ESC>
+			방향키
+			<ESC> for 종료
+		

@@ -10,3 +10,14 @@ https://www.lesstif.com/lpt/apt-24445574.html
 dpkg --get-selections | grep -v deinstall
 dpkg --get-selections | grep postgres
 
+
+
+
+파일 카운트
+	find . -type f | wc -l
+	
+압축/해제
+	tar -zcvf out.tar.gz <폴더이름>
+	tar -zxvf out.tar.gz
+
+
