@@ -16,8 +16,17 @@ dpkg --get-selections | grep postgres
 파일 카운트
 	find . -type f | wc -l
 	
-압축/해제
-	tar -zcvf out.tar.gz <폴더이름>
-	tar -zxvf out.tar.gz
+
+압축/해제 - https://do-study.tistory.com/105
+	tar -zcvf <out.tar.gz> <폴더이름>
+	tar -zxvf <out.tar.gz>
 
 
+	zip -rF <out.zip> <폴더 또는 파일>
+		r : 서브 디렉터리 까지 압축
+		F : 한글 이름을 가진 파일까지 압축
+	unzip <out.zip>
+
+
+wget
+	https://jjeongil.tistory.com/1291
