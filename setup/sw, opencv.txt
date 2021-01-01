@@ -43,8 +43,7 @@ Visual studio code 설치
 						  libxvidcore-dev \
 						  libx264-dev
 
-3. OpenCV에는 highgui라는 서브 모듈이 있는데 이미지를 스크린에 출력하거나 간단한 GUI를 만드는데 사용된다.
-이에 필요한 라이브러리를 설치
+3. OpenCV에는 highgui라는 서브 모듈이 있는데 이미지를 스크린에 출력하거나 간단한 GUI를 만드는데 사용된다. 이에 필요한 라이브러리를 설치 (오래 걸림)
 	$ sudo apt install -y libgtk2.0-dev libgtk-3-dev
 
 4. OpenCV 내의 행렬 연산을 최적화시키는데 필요
@@ -66,14 +65,14 @@ Visual studio code 설치
 	$ sudo python get-pip.py
 	$ sudo python3 get-pip.py
 	
-8. 가상환경에서 빌드
+8. 가상환경에서 빌드 (opencv_contrib 의 경로 설정에 유의)
 	$ cd ~/opencv
-	$ makedir buil
+	$ makedir build
 	$ cd build
 	$ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 					  -D CMAKE_INSTALL_PREFIX=/usr/local \
 					  -D INSTALL_PYTHON_EXAMPLES=ON \
-					  -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules \
+					  -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules \
 					  -D BUILD_EXAMPLE=ON ..
 	$ make
 	$ sudo make install
@@ -83,7 +82,7 @@ Visual studio code 설치
 	$ cd ~/.virtualenvs/cv/lib/python3.x/site-packages/
 	$ ln -s /usr/local/lib/python3.x/site-packages/cv2.so cv2.so
 
-10. 확인
+10. 확인 (아래는 pip3 install opencv-python 을 설치해서 되는건가??)
 	$ python3
 	>>> import cv2
 	>>> cv2.__version__
