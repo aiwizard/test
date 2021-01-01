@@ -1,4 +1,4 @@
-#sudo apt install -y wget
+﻿#sudo apt install -y wget
 sudo apt install -y build-essential pkg-config cmake git
 sudo apt install -y python3-pip python3-venv python3-tk python3-pyqt5 python3-pyaudio 
 sudo apt install -y ffmpeg 
@@ -67,7 +67,7 @@ Visual studio code 설치
 	
 8. 가상환경에서 빌드 (opencv_contrib 의 경로 설정에 유의)
 	$ cd ~/opencv
-	$ makedir build
+	$ mkdir build
 	$ cd build
 	$ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 					  -D CMAKE_INSTALL_PREFIX=/usr/local \
