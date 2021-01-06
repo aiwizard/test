@@ -27,7 +27,8 @@ Visual studio code 설치
 
 -------------------------------------------------- for opencv installation
 0. 참고
-	https://blog.naver.com/roboholic84/221139256044
+	https://blog.naver.com/roboholic84/221139256044	// opencv-master 최신버전
+	https://ghostweb.tistory.com/823			// opencv-3.4.5
 
 1. 다양한 이미지 포맷 지원
 	$ sudo apt install -y libjpeg-dev \
@@ -50,14 +51,15 @@ Visual studio code 설치
 	$ sudo apt install -y libatlas-base-dev gfortran
 
 5. OpenCV를 파이썬으로 사용할 수 있도록 파이썬 헤더를 설치
-	$ sudo apt install -y python2.7-dev
-	$ sudo apt install -y python3-dev
+	$ sudo apt install -y python2.7-dev python3-dev
 
 6. OpenCV 소스 다운로드
 	$ wget -O opencv.zip https://github.com/opencv/opencv/archive/master.zip
+	$ wget -O opencv-3.4.5.zip https://github.com/opencv/opencv/archive/3.4.5.zip
 	$ unzip opencv.zip
 	추가 lib 소스 다운로드
 	$ wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/master.zip
+	$ wget -O opencv_contrib-3.4.5.zip https://github.com/opencv/opencv_contrib/archive/3.4.5.zip
 	$ unzip opencv_contrib.zip
 	
 #7. PIP를 업데이트
@@ -72,8 +74,32 @@ Visual studio code 설치
 	$ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 					  -D CMAKE_INSTALL_PREFIX=/usr/local \
 					  -D INSTALL_PYTHON_EXAMPLES=ON \
-					  -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules \
+					  -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib-3.4.5/modules \
 					  -D BUILD_EXAMPLE=ON ..
+
+	// 아래로 성공 (빌드 속도 느린 이유 에러 발생 조건 제거
+	$ cmake -D CMAKE_BUILD_TYPE=RELEASE \
+-D CMAKE_INSTALL_PREFIX=/usr/local \
+-D WITH_TBB=OFF \
+-D WITH_IPP=OFF \
+-D WITH_1394=OFF \
+-D BUILD_WITH_DEBUG_INFO=OFF \
+-D BUILD_DOCS=OFF \
+-D INSTALL_C_EXAMPLES=ON \
+-D INSTALL_PYTHON_EXAMPLES=ON \
+-D BUILD_EXAMPLES=OFF \
+-D BUILD_TESTS=OFF \
+-D BUILD_PERF_TESTS=OFF \
+-D WITH_QT=ON \
+-D WITH_GTK=OFF \
+-D WITH_OPENGL=ON \
+-D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib-3.4.5/modules \
+-D WITH_V4L=ON \
+-D WITH_FFMPEG=ON \
+-D WITH_XINE=ON \
+-D BUILD_NEW_PYTHON_SUPPORT=ON \
+-D OPENCV_GENERATE_PKGCONFIG=ON ..
+
 	$ make
 	$ sudo make install
 	$ sudo ldconfig
@@ -82,7 +108,9 @@ Visual studio code 설치
 	$ cd ~/.virtualenvs/cv/lib/python3.x/site-packages/
 	$ ln -s /usr/local/lib/python3.x/site-packages/cv2.so cv2.so
 
-10. 확인 (아래는 pip3 install opencv-python 을 설치해서 되는건가??)
+10. 확인
+	$ pkg-config --modversion opencv
+
 	$ python3
 	>>> import cv2
 	>>> cv2.__version__
