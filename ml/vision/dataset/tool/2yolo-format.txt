@@ -1,0 +1,8 @@
+﻿
+https://stackoverflow.com/questions/64581692/how-to-convert-pascal-voc-to-yolo
+
+yolo format:
+	x = (xmin + xmax) / 2 / image_width;
+	y = (ymin + ymax) / 2 / image_height;
+	width = (xmax - xmin) / image_width;
+	height = (ymax - ymin) / image_height;
