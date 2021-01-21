@@ -12,7 +12,7 @@ splash_image = "m5.jpg"
 
 def arg_parse():
     ap = argparse.ArgumentParser()
-    ap.add_argument("-t", "--target", required=True, help="file or dir")
+    ap.add_argument("-i", "--image", required=True, help="file or dir")
     ap.add_argument("-e", "--extention", required=True, help="specify the extention of image file to use")
     args = vars(ap.parse_args())
 
@@ -165,7 +165,7 @@ def main():
 
     args = arg_parse()
 
-    filepath = args["target"]
+    filepath = args["image"]
     global ext_str
     ext_str = ".{}".format(args["extention"])
 
