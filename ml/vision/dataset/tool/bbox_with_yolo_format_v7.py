@@ -3,10 +3,20 @@ import sys
 import os
 import time
 import matplotlib.pyplot as plt
+import argparse
 
 
 splash_image = "m5.jpg"
 #ext_str = ""
+
+
+def arg_parse():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("-t", "--target", required=True, help="file or dir")
+    ap.add_argument("-e", "--extention", required=True, help="specify the extention of image file to use")
+    args = vars(ap.parse_args())
+
+    return args
 
 
 def get_name():
@@ -149,13 +159,15 @@ def draw_bbox_dir(dirpath):
 
 
 def main():
-    if(len(sys.argv) != 3):
-        print("usage: {} <file | dir> JPG|PNG|...".format(sys.argv[0]))
-        return
+    #if(len(sys.argv) != 3):
+    #    print("usage: {} <file | dir> JPG|PNG|...".format(sys.argv[0]))
+    #    return
 
-    filepath = sys.argv[1]
+    args = arg_parse()
+
+    filepath = args["target"]
     global ext_str
-    ext_str = ".{}".format(sys.argv[2])
+    ext_str = ".{}".format(args["extention"])
 
     if( filepath.find(ext_str) == -1):
         draw_bbox_dir(filepath)    # dir path
