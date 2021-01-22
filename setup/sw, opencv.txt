@@ -1,9 +1,10 @@
 ﻿#sudo apt install -y wget
 sudo apt install -y build-essential pkg-config cmake git
-sudo apt install -y python3-pip python3-venv python3-tk python3-pyqt5 python3-pyaudio 
+sudo apt install -y python3 python3-pip python3-venv python3-tk python3-pyqt5 python3-pyaudio 
 sudo apt install -y ffmpeg 
 sudo apt install -y vim tmux
 sudo apt install -y openjdk-8-jre chromium-chromedriver
+sudo apt install -y unzip
 
 설치 내역 볼 때
 	apt 로 설치한 것은 apt show python3-kt
