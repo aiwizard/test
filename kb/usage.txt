@@ -1,0 +1,4 @@
+﻿pyinstaller -F -w test.py
+	-F: 하나의 실행파일로
+	-w: 콘솔창 없이 윈도우모드로
+
