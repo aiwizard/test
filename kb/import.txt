@@ -1,0 +1,17 @@
+﻿os
+	https://g0pher.tistory.com/434
+
+
+
+from win32api import GetComputerName
+print( GetComputerName() )
+
+
+impot getpass
+print( getpass.getuser() )
+
+
+import os
+print( os.name )	# 'nt', 'posix', 'mac'
+
+
