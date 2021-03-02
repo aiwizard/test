@@ -26,3 +26,20 @@
 
 	3. 플레이리스트 중, 앞에 5개만 받으려면?
 		youtube-dl -ic -o "%(title)s.%(ext)s" -x --audio-format mp3 --audio-quality 0 --playlist-start 1 --playlist-end 5 <플레이리스트주소>
+		
+		
+		
+		
+		
+동영상 다운로드
+	https://cafe.daum.net/electricbrain/eTA8/253?q=youtube-dl
+
+	자격 증명을 사용하지 않고 시도
+		--no-check-certificate
+
+	1. 형식 확인			youtube-dl -F --no-check-certificate <url>
+	2. 최고품질 다운로드	youtube-dl -f best --no-check-certificate <url>
+	3. 품질 지정 다운로드	youtube-dl -f <번호> --no-check-certificate <url>
+	4. 영상+오디오 합쳐서 받기 (확장자가 mkv 로 바뀐다 --> ffmpeg 로 변환하면 됨)
+		youtube-dl -f <비디오번호>+<오디오번호> --no-check-certificate <url>
+		
