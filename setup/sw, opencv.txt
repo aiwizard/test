@@ -1,49 +1,47 @@
-﻿#sudo apt install -y wget
-sudo apt install -y build-essential pkg-config cmake git
-sudo apt install -y python3 python3-pip python3-venv python3-tk python3-pyqt5 python3-pyaudio 
-sudo apt install -y ffmpeg 
-sudo apt install -y vim tmux
-sudo apt install -y openjdk-8-jre chromium-chromedriver
-sudo apt install -y unzip
+﻿-------------------------------------------------- 
+	#sudo apt install -y wget
+	sudo apt install -y build-essential pkg-config cmake git
+	sudo apt install -y python3 python3-pip python3-venv python3-tk python3-pyqt5 python3-pyaudio 
+	sudo apt install -y ffmpeg 
+	sudo apt install -y vim tmux unzip
+	sudo apt install -y openjdk-8-jre chromium-chromedriver
 
-설치 내역 볼 때
-	apt 로 설치한 것은 apt show python3-kt
-	pip3 로 설치한 것은 pip3 show bs4
-
-qt 설치
-	'qt-unified-linux-x64-3.2.3-online.run' 를 다운받아 실행권한 부여한 후 실행. (chmod +x ...)
-
-# cp /usr/lib/chromium-browser/chromedriver /usr/bin	==> 이미 되어 있음
+	설치 내역 볼 때
+		apt 로 설치한 것은 apt show python3-kt
+		pip3 로 설치한 것은 pip3 show bs4
 
 
+	# cp /usr/lib/chromium-browser/chromedriver /usr/bin	==> 이미 되어 있음
 
 
-Visual studio code 설치
-	한글입력 문제로 direct 설치 한다
-		sudo dpkg -i code_1.50.1-1602600906_amd64.deb
+	Visual studio code 설치
+		한글입력 문제로 direct 설치 한다
+			sudo dpkg -i code_1.50.1-1602600906_amd64.deb
 		
-	https://myskan.tistory.com/108
+		https://myskan.tistory.com/108
 
 
+-------------------------------------------------- for opencv installation ----------------------------------------------------------
+Prerequisites
+	sudo apt install -y build-essential pkg-config cmake git
+	sudo apt install -y [python3 python3-pip python3-venv] python3-tk python3-pyqt5 python3-pyaudio 
+	sudo apt install -y ffmpeg 
+	sudo apt install -y vim tmux unzip
 
--------------------------------------------------- for opencv installation
+	qt 설치
+		sudo apt install qt5-default	// 이거 설치해서 잘 동작했음
+		or
+		'qt-unified-linux-x64-3.2.3-online.run' 를 다운받아 실행권한 부여한 후 실행. (chmod +x ...)
+
 0. 참고
 	https://blog.naver.com/roboholic84/221139256044	// opencv-master 최신버전
 	https://ghostweb.tistory.com/823			// opencv-3.4.5
 
 1. 다양한 이미지 포맷 지원
-	$ sudo apt install -y libjpeg-dev \
-						  libtiff5-dev \
-						  libjpeg-dev \
-						  libpng-dev
-					(libjasper-dev 는 ubuntu17 까지만 지원)
+	$ sudo apt install -y libjpeg-dev libtiff5-dev libpng-dev	(libjasper-dev 는 ubuntu17 까지만 지원)
+
 2. 다양한 비디오 포맷 지원
-	$ sudo apt install -y libavcodec-dev \
-						  libavformat-dev \
-						  libswscale-dev \
-						  libv4l-dev \
-						  libxvidcore-dev \
-						  libx264-dev
+	$ sudo apt install -y libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libxvidcore-dev libx264-dev
 
 3. OpenCV에는 highgui라는 서브 모듈이 있는데 이미지를 스크린에 출력하거나 간단한 GUI를 만드는데 사용된다. 이에 필요한 라이브러리를 설치 (오래 걸림)
 	$ sudo apt install -y libgtk2.0-dev libgtk-3-dev
@@ -72,12 +70,15 @@ Visual studio code 설치
 	$ cd ~/opencv
 	$ mkdir build
 	$ cd build
-	$ cmake -D CMAKE_BUILD_TYPE=RELEASE \
-					  -D CMAKE_INSTALL_PREFIX=/usr/local \
-					  -D INSTALL_PYTHON_EXAMPLES=ON \
-					  -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib-3.4.5/modules \
-					  -D BUILD_EXAMPLE=ON ..
 
+	// 아래 해당 버전 정보 수정 필수 <<<<<<<<<<<<<<<<<
+	$ cmake -D CMAKE_BUILD_TYPE=RELEASE \
+-D CMAKE_INSTALL_PREFIX=/usr/local \
+-D INSTALL_PYTHON_EXAMPLES=ON \
+-D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib-3.4.5/modules \
+-D BUILD_EXAMPLE=ON ..
+
+	// 아래 해당 버전 정보 수정 필수 <<<<<<<<<<<<<<<<<
 	// 아래로 성공 (빌드 속도 느린 이유 에러 발생 조건 제거
 	$ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 -D CMAKE_INSTALL_PREFIX=/usr/local \
@@ -101,8 +102,9 @@ Visual studio code 설치
 -D BUILD_NEW_PYTHON_SUPPORT=ON \
 -D OPENCV_GENERATE_PKGCONFIG=ON ..
 
+	// 빌드/설치
 	$ make
-	$ sudo make install
+	$ sudo make install/uninstall
 	$ sudo ldconfig
 
 9. OpenCV bindings를 cv 가상환경과 symbolic-link

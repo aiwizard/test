@@ -3,3 +3,7 @@ https://h-a-i.tistory.com/73
 http://www.clserver.co.kr/blog/pythone-read-file-content/
 
 https://parkdream.tistory.com/42
+
+파이썬 파일 읽기 (utf-8 txt) 방법 7가지 예제
+	https://codingcoding.tistory.com/1041
+
